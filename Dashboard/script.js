@@ -73,12 +73,12 @@ let mode = localStorage.getItem('mode');
 
 switchMode.addEventListener('change', function () {
 	if(this.checked) {
-		document.body.classList.add('dark');
-	    	document.querySelector(".container h3").classList.add('dark');
 		localStorage.setItem('mode', 'gelap');
+		document.body.classList.add('dark');
+	    	document.querySelector(".container h3").classList.add('dark');		
 	} else {
-		document.body.classList.remove('dark');
 		localStorage.setItem('mode', 'terang');
+		document.body.classList.remove('dark');
 	}
 });
 
