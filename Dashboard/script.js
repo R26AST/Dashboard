@@ -69,7 +69,7 @@ window.addEventListener('resize', function () {
 
 
 const switchMode = document.getElementById('switch-mode');
-var mode = 0;
+var mode;
 
 mode = localStorage.getItem('mode');
 
@@ -84,7 +84,7 @@ switchMode.addEventListener('change', function () {
 	}
 });
 
-if(mode == 0) {
+if(mode == 0 || mode == "" || mode == null) {
 	switchMode.style.checked = "false";
 } else {
 	switchMode.style.checked = "true";
