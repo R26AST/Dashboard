@@ -82,7 +82,7 @@ switchMode.addEventListener('change', function () {
 });
 
 if(mode == 'gelap') {
-	home();
+	//home();
 	switchMode.checked = "true";
 	document.body.classList.add('dark');
 	document.querySelector(".container h3").classList.add('dark');
