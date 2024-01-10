@@ -69,15 +69,27 @@ window.addEventListener('resize', function () {
 
 
 const switchMode = document.getElementById('switch-mode');
+var mode = 0;
+
+mode = localStorage.getItem('mode');
 
 switchMode.addEventListener('change', function () {
 	if(this.checked) {
 		document.body.classList.add('dark');
-	    document.querySelector(".container h3").classList.add('dark');
+	    	document.querySelector(".container h3").classList.add('dark');
+		localStorage.setItem('mode', 1);
 	} else {
 		document.body.classList.remove('dark');
+		localStorage.setItem('mode', 0);
 	}
 });
+
+if(mode == 0) {
+	switchMode.style.checked = "false";
+} else {
+	switchMode.style.checked = "true";
+}
+
 
 let Judul = document.getElementById("Judul");
 let subJudul = document.getElementById("subJudul");
