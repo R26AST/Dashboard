@@ -77,17 +77,20 @@ switchMode.addEventListener('change', function () {
 	if(this.checked) {
 		document.body.classList.add('dark');
 	    	document.querySelector(".container h3").classList.add('dark');
-		localStorage.setItem('mode', 1);
+		localStorage.setItem('mode', '1');
 	} else {
 		document.body.classList.remove('dark');
-		localStorage.setItem('mode', 0);
+		localStorage.setItem('mode', '0');
 	}
 });
 
-if(mode == 0 || mode == "" || mode == null) {
-	switchMode.style.checked = "false";
+if(mode == '0' || mode == "" || mode == null) {
+	switchMode.checked = "false";
+	document.body.classList.add('dark');
+	document.querySelector(".container h3").classList.add('dark');
 } else {
-	switchMode.style.checked = "true";
+	switchMode.checked = "true";
+	document.body.classList.remove('dark');
 }
 
 
