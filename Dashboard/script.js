@@ -73,8 +73,8 @@ let mode = localStorage.getItem('mode');
 switchMode.addEventListener('change', function () {
 	if(this.checked) {
 		localStorage.setItem('mode', 'gelap');
-		//document.body.classList.add('dark');
-	    	//document.querySelector(".container h3").classList.add('dark');		
+		document.body.classList.add('dark');
+	    	document.querySelector(".container h3").classList.add('dark');		
 	} else {
 		localStorage.setItem('mode', 'terang');
 		document.body.classList.remove('dark');
@@ -82,7 +82,7 @@ switchMode.addEventListener('change', function () {
 });
 
 if(mode == 'gelap') {
-	//home();
+	home();
 	switchMode.checked = "true";
 	document.body.classList.add('dark');
 	document.querySelector(".container h3").classList.add('dark');
