@@ -67,10 +67,10 @@ window.addEventListener('resize', function () {
 	}
 });
 
+home();
 
 const switchMode = document.getElementById('switch-mode');
 let mode = localStorage.getItem('mode');
-
 
 switchMode.addEventListener('change', function () {
 	if(this.checked) {
