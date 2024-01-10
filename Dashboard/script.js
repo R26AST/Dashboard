@@ -70,22 +70,11 @@ window.addEventListener('resize', function () {
 const switchMode = document.getElementById('switch-mode');
 let mode = localStorage.getItem('mode');
 
-switchMode.addEventListener('change', function () {
-	if(this.checked) {
-		localStorage.setItem('mode', 'gelap');
-		document.body.classList.add('dark');
-	    	document.querySelector(".container h3").classList.add('dark');		
-	} else {
-		localStorage.setItem('mode', 'terang');
-		document.body.classList.remove('dark');
-	}
-});
-
 if(mode == 'gelap') {
 	//home();
 	switchMode.checked = "true";
-	document.body.classList.add('dark');
-	document.querySelector(".container h3").classList.add('dark');
+	//document.body.classList.add('dark');
+	//document.querySelector(".container h3").classList.add('dark');
 } else {
 	//switchMode.checked = "false";
 	document.body.classList.remove('dark');
@@ -240,3 +229,14 @@ function logout() {
 }
 
 home();
+
+switchMode.addEventListener('change', function () {
+	if(this.checked) {
+		localStorage.setItem('mode', 'gelap');
+		document.body.classList.add('dark');
+	    	document.querySelector(".container h3").classList.add('dark');		
+	} else {
+		localStorage.setItem('mode', 'terang');
+		document.body.classList.remove('dark');
+	}
+});
