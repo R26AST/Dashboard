@@ -69,27 +69,25 @@ window.addEventListener('resize', function () {
 
 
 const switchMode = document.getElementById('switch-mode');
-var mode;
-
-mode = localStorage.getItem('mode');
+let mode = localStorage.getItem('mode');
 
 switchMode.addEventListener('change', function () {
 	if(this.checked) {
 		document.body.classList.add('dark');
 	    	document.querySelector(".container h3").classList.add('dark');
-		localStorage.setItem('mode', '1');
+		localStorage.setItem('mode', 'gelap');
 	} else {
 		document.body.classList.remove('dark');
-		localStorage.setItem('mode', '0');
+		localStorage.setItem('mode', 'terang');
 	}
 });
 
-if(mode == '0' || mode == "" || mode == null) {
-	switchMode.checked = "false";
+if(mode == 'gelap' || mode == "" || mode == null) {
+	switchMode.checked = "true";
 	document.body.classList.add('dark');
 	document.querySelector(".container h3").classList.add('dark');
 } else {
-	switchMode.checked = "true";
+	switchMode.checked = "false";
 	document.body.classList.remove('dark');
 }
 
