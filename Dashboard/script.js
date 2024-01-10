@@ -67,8 +67,6 @@ window.addEventListener('resize', function () {
 	}
 });
 
-home();
-
 const switchMode = document.getElementById('switch-mode');
 let mode = localStorage.getItem('mode');
 
@@ -87,9 +85,11 @@ if(mode == 'gelap') {
 	switchMode.checked = "true";
 	document.body.classList.add('dark');
 	document.querySelector(".container h3").classList.add('dark');
+	home();
 } else {
 	//switchMode.checked = "false";
 	document.body.classList.remove('dark');
+	//home();
 }
 
 
