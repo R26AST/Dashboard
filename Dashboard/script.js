@@ -228,8 +228,6 @@ function logout() {
   window.history.forward(); 
 }
 
-home();
-
 if(mode == 'gelap') {
 	//home();
 	switchMode.checked = "true";
@@ -240,3 +238,5 @@ if(mode == 'gelap') {
 	document.body.classList.remove('dark');
 	//home();
 }
+
+home();
