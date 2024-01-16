@@ -100,6 +100,32 @@ let sambutan = document.getElementById("sambutan");
 let tahun = new Date().getFullYear();
 let thn_lalu = tahun - 1;
 
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+  if (distance > 0) {
+  document.getElementById("OSN").innerHTML = "Segera";
+  document.getElementById("OSN").style.cursor = "none";
+  document.getElementById("OSN").style.pointerEvents = "none";
+  
+}
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("OSN").innerHTML = "Kerjakan";
+    document.getElementById("OSN").classList.remove('pending');
+    document.getElementById("OSN").classList.add('completed');
+    document.getElementById("OSN").style.cursor = "pointer";
+  }
+}, 1000);
+
 function home() {
   Judul.innerHTML = "Dashboard";
   subJudul.innerHTML = "Beranda";
