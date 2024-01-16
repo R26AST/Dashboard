@@ -354,7 +354,7 @@ body {
 	color: var(--blue);
 	pointer-events: unset;
 }
-#content main .head-title .btn-download {
+#content main .btn-download {
 	height: 36px;
 	padding: 0 16px;
 	border-radius: 36px;
@@ -370,13 +370,13 @@ body {
 
 
 
-#content main .box-info {
+#content main .box-info, .box-download {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	grid-gap: 24px;
 	margin-top: 36px;
 }
-#content main .box-info li {
+#content main .box-info li, .box-download li {
 	padding: 24px;
 	background: var(--light);
 	border-radius: 20px;
