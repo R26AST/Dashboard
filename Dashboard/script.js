@@ -112,7 +112,9 @@ var x = setInterval(function() {
   if (distance > 0) {
   document.getElementById("OSN").innerHTML = "Segera";
   document.getElementById("OSN").style.cursor = "none";
-  document.getElementById("OSN").style.pointerEvents = "none";
+  document.getElementById("OSN").style.pointerEvents = "none"
+  document.getElementById("nilai_OSN").innerHTML = "Dibuka pada 26 Januari pukul 15.00";
+  document.getElementById("nilai_OSN").style.fontSize = "small";
   
 }
     
@@ -120,8 +122,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("OSN").innerHTML = "Kerjakan";
-    document.getElementById("OSN").classList.remove('pending');
-    document.getElementById("OSN").classList.add('completed');
+    document.getElementById("OSN").classList.replace('pending', 'completed');
     document.getElementById("OSN").style.cursor = "pointer";
   }
 }, 1000);
