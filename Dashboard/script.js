@@ -99,7 +99,9 @@ let sambutan = document.getElementById("sambutan");
 
 let tahun = new Date().getFullYear();
 let thn_lalu = tahun - 1;
-let tgl = 18;
+let tlet tahun = new Date().getFullYear();
+let thn_lalu = tahun - 1;
+let tgl = 18; 
 
 // Set the date we're counting down to
 var countDownDate = new Date("Jan "+ tgl.toString() +", 2024 15:00:00").getTime();
@@ -110,13 +112,14 @@ var x = setInterval(function() {
   
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
-	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+ 
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-	document.getElementById("ket.OSN").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
-	
+  document.getElementById("ket.OSN").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
+  
   if (distance > 0) {
   document.getElementById("OSN").innerHTML = "Segera";
   document.getElementById("OSN").style.cursor = "none";
@@ -132,7 +135,7 @@ var x = setInterval(function() {
     document.getElementById("OSN").innerHTML = "Kerjakan";
     document.getElementById("OSN").classList.replace('pending', 'completed');
     document.getElementById("OSN").style.cursor = "pointer";
-  }
+}
 }, 1000);
 
 function home() {
