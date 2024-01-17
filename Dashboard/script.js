@@ -116,7 +116,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("ket.OSN").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
+  document.getElementById("ket_OSN").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
   
   if (distance > 0) {
   document.getElementById("OSN").innerHTML = "Segera";
@@ -124,7 +124,7 @@ var x = setInterval(function() {
   document.getElementById("OSN").style.pointerEvents = "none";
   document.getElementById("nilai_OSN").innerHTML = "Dibuka pada "+ tgl.toString() +" Januari pukul 15.00";
   document.getElementById("nilai_OSN").style.fontSize = "small";
-  document.getElementById("ket.OSN").style.fontSize = "x-small";
+  document.getElementById("ket_OSN").style.fontSize = "x-small";
 }
     
   // If the count down is over, write some text 
@@ -133,6 +133,7 @@ var x = setInterval(function() {
     document.getElementById("OSN").innerHTML = "Kerjakan";
     document.getElementById("OSN").classList.replace('pending', 'completed');
     document.getElementById("OSN").style.cursor = "pointer";
+    document.getElementById("ket_OSN").innerHTML = "";
 }
 }, 1000);
 
