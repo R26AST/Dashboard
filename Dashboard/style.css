@@ -654,6 +654,11 @@ body {
  
 }
 
+#OSN {
+  position: relative;
+	left: 5px;
+}
+
 .tele {
   text-align: center;
   align-items: center;
