@@ -99,7 +99,7 @@ let sambutan = document.getElementById("sambutan");
 
 let tahun = new Date().getFullYear();
 let thn_lalu = tahun - 1;
-let tgl = 17; 
+let tgl = 26; 
 
 // Set the date we're counting down to
 var countDownDate = new Date("Jan "+ tgl +", 2024 15:00:00").getTime();
