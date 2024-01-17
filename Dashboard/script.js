@@ -102,7 +102,7 @@ let thn_lalu = tahun - 1;
 let tgl = 17;
 
 // Set the date we're counting down to
-var countDownDate = new Date("Jan "+ tgl.toString() +", 2024 15:00:00").getTime();
+var countDownDate = new Date("Jan "+ tgl +", 2024 15:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
