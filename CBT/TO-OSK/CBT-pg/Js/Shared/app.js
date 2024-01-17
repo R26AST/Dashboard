@@ -2,7 +2,7 @@
 //NB: The questions are supposed to be served from an api not added in the javascript
 var exam = {
     "duration": 90,
-    "instruction": "Jawablah dengan menekan tombol opsi jawaban yang tersedia.<br><br>Untuk pengguna kompute/laptop sendiri dappat menekan tombol A, B, C, D, atau E ppada keyboard untuk menjawab.",
+    "instruction": "Jawablah dengan menekan tombol opsi jawaban yang tersedia.<br><br>Untuk pengguna komputer/laptop sendiri dapat menekan tombol A, B, C, D, atau E pada keyboard untuk menjawab.",
     "questions":[
         {
             "question": 'Suatu benda logam dipanaskan hingga memiliki suhu 1000°C. Berapakah panjang gelombang maksimum yang dipancarkan oleh logam tersebut? <br><br>Konstanta Wien = 2,9 × 10<sup>-3</sup> m K',
