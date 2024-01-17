@@ -102,7 +102,7 @@ let thn_lalu = tahun - 1;
 var tgl = 17;
 
 // Set the date we're counting down to
-var countDownDate = new Date("Jan "+ tgl.toString() +", 2024 15:00:00").getTime();
+var countDownDate = new Date("Jan 17, 2024 15:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -121,7 +121,7 @@ var x = setInterval(function() {
   document.getElementById("OSN").innerHTML = "Segera";
   document.getElementById("OSN").style.cursor = "none";
   document.getElementById("OSN").style.pointerEvents = "none"
-  document.getElementById("nilai_OSN").innerHTML = "Dibuka pada "+ tgl.toString() +" Januari pukul 15.00";
+  document.getElementById("nilai_OSN").innerHTML = "Dibuka pada 17 Januari pukul 15.00";
   document.getElementById("nilai_OSN").style.fontSize = "small";
   document.getElementById("ket.OSN").style.fontSize = "x-small";
 }
