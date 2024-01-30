@@ -146,6 +146,7 @@ function home() {
   sambutan.innerHTML = "Halaman Utama";
   document.getElementById("konten_home").style.display = "block";
   document.getElementById("konten_materi").style.display = "none";
+  document.getElementById("konten_simulasi").style.display = "none";
   document.getElementById("konten_tes").style.display = "none";
   document.getElementById("konten_telegram").style.display = "none";
   document.getElementById("konten_instagram").style.display = "none";
@@ -161,6 +162,23 @@ function materi() {
   sambutan.innerHTML = "Halaman Materi"
   document.getElementById("konten_materi").style.display = "block";
   document.getElementById("konten_home").style.display = "none";
+  document.getElementById("konten_simulasi").style.display = "none";
+  document.getElementById("konten_tes").style.display = "none";
+  document.getElementById("konten_telegram").style.display = "none";
+  document.getElementById("konten_instagram").style.display = "none"
+  document.getElementById("konten_youtube").style.display = "none";
+  document.getElementById("konten_lomba_univ").style.display = "none";
+  document.getElementById("konten_pengaturan").style.display = "none";
+}
+
+function simulasi() {
+  Judul.innerHTML = "Simulasi";
+  subJudul.innerHTML = "Simulasi";
+  ikon.setAttribute("class", "bx bx-atom");
+  sambutan.innerHTML = "Halaman Simulasi"
+  document.getElementById("konten_simulasi").style.display = "block";
+  document.getElementById("konten_home").style.display = "none";
+  document.getElementById("konten_materi").style.display = "none";
   document.getElementById("konten_tes").style.display = "none";
   document.getElementById("konten_telegram").style.display = "none";
   document.getElementById("konten_instagram").style.display = "none"
@@ -179,6 +197,7 @@ function tes() {
   document.getElementById("konten_tes").style.display = "block";
   document.getElementById("konten_home").style.display = "none";
   document.getElementById("konten_materi").style.display = "none";
+  document.getElementById("konten_simulasi").style.display = "none";
   document.getElementById("konten_telegram").style.display = "none";
   document.getElementById("konten_instagram").style.display = "none";
   document.getElementById("konten_youtube").style.display = "none";
@@ -194,6 +213,7 @@ function telegram() {
   document.getElementById("konten_telegram").style.display = "block";
   document.getElementById("konten_home").style.display = "none";
   document.getElementById("konten_materi").style.display = "none";
+  document.getElementById("konten_simulasi").style.display = "block";
   document.getElementById("konten_tes").style.display = "none";
   document.getElementById("konten_instagram").style.display = "none";
   document.getElementById("konten_youtube").style.display = "none";
@@ -209,6 +229,7 @@ function instagram() {
   document.getElementById("konten_instagram").style.display = "block";
   document.getElementById("konten_home").style.display = "none";
   document.getElementById("konten_materi").style.display = "none";
+  document.getElementById("konten_simulasi").style.display = "block";
   document.getElementById("konten_tes").style.display = "none";
   document.getElementById("konten_telegram").style.display = "none";
   document.getElementById("konten_youtube").style.display = "none";
@@ -224,6 +245,7 @@ function youtube() {
   document.getElementById("konten_youtube").style.display = "block";
   document.getElementById("konten_home").style.display = "none";
   document.getElementById("konten_materi").style.display = "none";
+  document.getElementById("konten_simulasi").style.display = "block";
   document.getElementById("konten_tes").style.display = "none";
   document.getElementById("konten_telegram").style.display = "none";
   document.getElementById("konten_instagram").style.display = "none";
@@ -239,6 +261,7 @@ function lomba_univ() {
   document.getElementById("konten_lomba_univ").style.display = "block";
   document.getElementById("konten_home").style.display = "none";
   document.getElementById("konten_materi").style.display = "none";
+  document.getElementById("konten_simulasi").style.display = "block";
   document.getElementById("konten_tes").style.display = "none";
   document.getElementById("konten_telegram").style.display = "none";
   document.getElementById("konten_instagram").style.display = "none";
@@ -254,6 +277,7 @@ function pengaturan() {
   document.getElementById("konten_pengaturan").style.display = "block";
   document.getElementById("konten_home").style.display = "none";
   document.getElementById("konten_materi").style.display = "none";
+  document.getElementById("konten_simulasi").style.display = "block";
   document.getElementById("konten_tes").style.display = "none";
   document.getElementById("konten_telegram").style.display = "none";
   document.getElementById("konten_instagram").style.display = "none";
