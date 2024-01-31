@@ -105,7 +105,7 @@ let tgl = 26;
 var countDownDate = new Date("Jan "+ tgl +", 2024 15:00:00").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
+/*var x = setInterval(function() {
   var now = new Date().getTime();
   
   // Find the distance between now and the count down date
@@ -135,7 +135,7 @@ var x = setInterval(function() {
     document.getElementById("OSN").style.cursor = "pointer";
     document.getElementById("ket_OSN").innerHTML = "";
 }
-}, 1000);
+}, 1000);*/
 
 function home() {
   Judul.innerHTML = "Dashboard";
