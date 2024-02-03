@@ -264,7 +264,7 @@ document.addEventListener("keydown", function (e) {
 //$(document).ready(function () { dijawab(); });
 document.addEventListener("DOMContentLoaded", () => {
   dijawab();
-  terjawab();
+  //terjawab();
 });
 
 function dijawab() {
@@ -291,13 +291,13 @@ function dijawab() {
 	}
 }
 
-function terjawab() {
+/*function terjawab() {
 	for(var i = 0; i < 15; i++) {
 		if(localStorage.getItem('savy-nomor'+ i +'') == 'opsi1' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi2' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi3' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi4') {
 			document.querySelectorAll("#questionsButton > button")[i].classList.add("greenHightlight");
 		}
 	}
-}
+}*/
 
 
 function hapus() {
@@ -306,8 +306,8 @@ function hapus() {
     
     //questionOptions[answers[hps]].checked = false;
 
-	for(var i = 0; i <= 5; i++) {
-	document.getElementById("opsi"+ i +"").checked = "false";
+	for(var i = 0; i < 5; i++) {
+	document.getElementById("opsi"+ i.toString() +"").checked = "false";
 	}
 	localStorage.removeItem('savy-nomor'+ hps.toString() +'');
 	//$('.auto-save').savy('destroy');
