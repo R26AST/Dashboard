@@ -249,11 +249,12 @@ function submitExam(){
     modal.style.display = "none";
     cekJawaban();
 	
-	document.querySelector(".daftar").style.display = "none";
+    document.querySelector(".daftar").style.display = "none";
     document.querySelector(".pSubmit").style.display = "none";
-    document.querySelector(".content > div:last-child > div").innerHTML = "Anda telah selesai mengerjakan";
-    document.querySelector(".content > div:last-child > div").innerHTML += "<br></br> <a class='home' href='tes.html' id='kembali' style='text-decoration: none'>Kembali</a> <br>"
-    //document.querySelector(".total").innerHTML = "Total Skor: " + score.toString();
+    document.querySelector(".content > div:last-child > div").innerHTML = "Anda telah selesai mengerjakan ujian";
+    document.querySelector(".content > div:last-child > div").innerHTML += "<br> <br> <br> <center><a class='kirim' href='https://r26ast.github.io/Dashboard/' id='kembali' style='text-decoration: none;'>Kembali</a></center> <br> <br>"
+    document.querySelector(".total").innerHTML = "Nilai : " + score.toString();   
+	//document.querySelector(".total").innerHTML = "Total Skor: " + score.toString();
 }
 
 function cekJawaban() {
@@ -279,7 +280,7 @@ function cekJawaban() {
 
     let score = 0;
 	//NOMOR 1
-    if(jawaban1A === "3.36") {
+    if(jawaban1A == "3.36") {
       score += 5;
     }
     if(jawaban1B >= 5299 && jawaban1B <= 5300) {
