@@ -293,8 +293,9 @@ function dijawab() {
 
 function terjawab() {
 	for(var i = 0; i < 15; i++) {
-		if(localStorage.getItem('savy-nomor'+ i +'') == 'opsi1' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi2' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi3' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi4')
-		document.querySelectorAll("#questionsButton > button")[i].classList.add("greenHightlight");
+		if(localStorage.getItem('savy-nomor'+ i +'') == 'opsi1' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi2' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi3' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi4') {
+			document.querySelectorAll("#questionsButton > button")[i].classList.add("greenHightlight");
+		}
 	}
 }
 
