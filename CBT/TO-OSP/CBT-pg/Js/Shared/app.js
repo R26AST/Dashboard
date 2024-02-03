@@ -298,7 +298,7 @@ function hapus() {
     //questionOptions[answers[hps]].checked = false;
 
 	for(var i = 0; i < 5; i++) {
-	document.getElementById("opsi"+ i +"")[answers[hps]].checked = "false";
+	document.getElementById("opsi"+ i +"").checked = "false";
 	}
 	localStorage.removeItem('savy-nomor'+ hps.toString() +'');
 	//$('.auto-save').savy('destroy');
