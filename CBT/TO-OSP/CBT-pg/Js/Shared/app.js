@@ -315,7 +315,7 @@ function yakin() {
     return yakinState;
 }
 
-if(localStorage.getItem('nomor-ragu'+ x.toString() +'') == 'ragu') {
+if(localStorage.getItem('nomor-ragu'+ x +'') == 'ragu') {
 	ragu();;
 }
 
