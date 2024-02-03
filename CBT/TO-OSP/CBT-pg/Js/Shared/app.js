@@ -311,7 +311,7 @@ function yakin() {
 }
 
 if(localStorage.getItem('nomor-ragu'+ x.toString() +'') == 'ragu') {
-	ragu();
+	ragu();;
 }
 
 var modal = document.querySelector(".modal");
