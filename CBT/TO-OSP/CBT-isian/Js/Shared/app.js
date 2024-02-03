@@ -242,7 +242,12 @@ function showNumber(){
     modal.style.display = "block";
 }
 
-
+$(document).ready(function(){
+	$('.auto-save').savy('load');
+	$( "#hapus" ).click(function() {
+		$('.auto-save').savy('destroy');
+	});
+});
 
 function submitExam(){
     clearInterval(timerObject);
