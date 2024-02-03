@@ -264,6 +264,7 @@ document.addEventListener("keydown", function (e) {
 //$(document).ready(function () { dijawab(); });
 document.addEventListener("DOMContentLoaded", () => {
   dijawab();
+  terjawab();
 });
 
 function dijawab() {
@@ -287,6 +288,13 @@ function dijawab() {
 	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi4') {
 		document.getElementById("opsi4").checked = "true";
 		selectAnswer(x, 4);
+	}
+}
+
+function terjawab() {
+	for(var i = 0; i < 15; i++) {
+		if(localStorage.getItem('savy-nomor'+ i +'') == 'opsi1' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi2' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi3' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi4')
+		document.querySelectorAll("#questionsButton > button")[i].classList.add("greenHightlight");
 	}
 }
 
