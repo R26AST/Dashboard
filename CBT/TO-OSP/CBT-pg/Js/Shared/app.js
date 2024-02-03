@@ -261,7 +261,7 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
-$(document).ready(dijawab(););
+$(document).ready(function () { dijawab(); });
 
 function dijawab() {
 	alert("Jawaban dipulihkan");
