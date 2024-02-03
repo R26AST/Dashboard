@@ -201,7 +201,7 @@ function showQuestion(questionNumber) {
     hps = x;
 	
      for(var i = 0; i < exam.questions[questionNumber].options.length; i++){
-		 optionDiv.innerHTML += '<input type="radio" class="auto-save" id="opsi'+i.toString()+'" onclick="selectAnswer('+questionNumber+','+i.toString()+')" name="questionOptions"/><label for="opsi'+i.toString()+'" class="opsi'+i.toString()+'"><div class="dot" id="abj'+i.toString()+'"></div> <span class="teks">' + exam.questions[questionNumber].options[i].toString() + '</span> </label>';
+		 optionDiv.innerHTML += '<input type="radio" id="opsi'+i.toString()+'" class="auto-save" onclick="selectAnswer('+questionNumber+','+i.toString()+')" name="questionOptions"/><label for="opsi'+i.toString()+'" class="opsi'+i.toString()+'"><div class="dot" id="abj'+i.toString()+'"></div> <span class="teks">' + exam.questions[questionNumber].options[i].toString() + '</span> </label>';
 
         //optionDiv.innerHTML += '<br><input type="radio" id="opsi" onclick="selectAnswer('+questionNumber+','+ i.toString()+')" name="questionOptions"/>' + exam.questions[questionNumber].options[i].toString() + '<br>';		
 		
@@ -213,7 +213,9 @@ function showQuestion(questionNumber) {
      
 	 }
     
-    
+    $(document).ready(function(){
+	$('.auto-save').savy('load');
+    });
     
     const questionButton = document.querySelectorAll("#questionsButton > button");
     for(let i = 0; i < questionButton.length; i++){
@@ -253,13 +255,6 @@ document.addEventListener("keydown", function (e) {
 		document.getElementById("opsi4").checked = "true";
 		selectAnswer(x, 4);
 	}
-});
-
-$(document).ready(function(){
-	$('.auto-save').savy('load');
-	$( "#hapus" ).click(function() {
-		$('.auto-save').savy('destroy');
-	});
 });
 
 function hapus() {
