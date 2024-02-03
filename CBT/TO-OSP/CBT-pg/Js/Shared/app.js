@@ -267,7 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function dijawab() {
-	alert("Jawaban dipulihkan");
+	//alert("Jawaban dipulihkan");
 	if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi0') {
 		document.getElementById("opsi0").checked = "true";
 		selectAnswer(x, 0);
@@ -292,10 +292,14 @@ function dijawab() {
 
 
 function hapus() {
-    var questionOptions = document.querySelectorAll("#optionDiv > input");
+    //var questionOptions = document.querySelectorAll("#optionDiv > input");
     //var ele = document.querySelectorAll("input[type=radio]")[hps];
     
-    questionOptions[answers[hps]].checked = false;
+    //questionOptions[answers[hps]].checked = false;
+
+	for(var i = 0; i < 5; i++) {
+	document.getElementById("opsi"+ i +"")[answers[hps]].checked = "false";
+	}
 	localStorage.removeItem('savy-nomor'+ hps.toString() +'');
 	//$('.auto-save').savy('destroy');
 
