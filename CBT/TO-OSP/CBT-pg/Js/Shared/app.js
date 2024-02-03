@@ -264,7 +264,7 @@ function hapus() {
     //var ele = document.querySelectorAll("input[type=radio]")[hps];
     
     questionOptions[answers[hps]].checked = false;
-	localStorage.removeItem('savy-nomor'+ hps);
+	localStorage.removeItem('savy-nomor'+ hps.toString() +'');
 	//$('.auto-save').savy('destroy');
 
     //for(var k = 0; k < exam.questions[hps].options.length; k++){
