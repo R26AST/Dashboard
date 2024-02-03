@@ -201,7 +201,7 @@ function showQuestion(questionNumber) {
     hps = x;
 	
      for(var i = 0; i < exam.questions[questionNumber].options.length; i++){
-		 optionDiv.innerHTML += '<input type="radio" id="opsi'+i.toString()+'" onclick="selectAnswer('+questionNumber+','+i.toString()+')" name="questionOptions"/><label for="opsi'+i.toString()+'" class="opsi'+i.toString()+'"><div class="dot" id="abj'+i.toString()+'"></div> <span class="teks">' + exam.questions[questionNumber].options[i].toString() + '</span> </label>';
+		 optionDiv.innerHTML += '<input type="radio" class="auto-save" id="opsi'+i.toString()+'" onclick="selectAnswer('+questionNumber+','+i.toString()+')" name="questionOptions"/><label for="opsi'+i.toString()+'" class="opsi'+i.toString()+'"><div class="dot" id="abj'+i.toString()+'"></div> <span class="teks">' + exam.questions[questionNumber].options[i].toString() + '</span> </label>';
 
         //optionDiv.innerHTML += '<br><input type="radio" id="opsi" onclick="selectAnswer('+questionNumber+','+ i.toString()+')" name="questionOptions"/>' + exam.questions[questionNumber].options[i].toString() + '<br>';		
 		
@@ -255,11 +255,16 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
+$(document).ready(function(){
+	$('.auto-save').savy('load');
+});
+
 function hapus() {
     var questionOptions = document.querySelectorAll("#optionDiv > input");
     //var ele = document.querySelectorAll("input[type=radio]")[hps];
     
     questionOptions[answers[hps]].checked = false;
+	$('.auto-save').savy('destroy');
 
     //for(var k = 0; k < exam.questions[hps].options.length; k++){
         //answers[k] = -1;
