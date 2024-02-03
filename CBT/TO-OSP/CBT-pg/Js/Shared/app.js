@@ -261,7 +261,10 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
-$(document).ready(function () { dijawab(); });
+//$(document).ready(function () { dijawab(); });
+document.addEventListener("DOMContentLoaded", () => {
+  dijawab();
+});
 
 function dijawab() {
 	alert("Jawaban dipulihkan");
