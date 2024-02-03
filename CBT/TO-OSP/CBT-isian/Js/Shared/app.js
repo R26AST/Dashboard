@@ -334,4 +334,5 @@ function cekJawaban() {
 	var nilai = score + JSON.parse(sessionStorage.getItem("nilai"));
 	document.querySelector(".total").innerHTML = "Skor Isian : " + score.toString();
 	document.querySelector(".nilai").innerHTML = "Total Skor : " + nilai.toString();
+	localStorage.setItem("TO_OSP", nilai);
 }
