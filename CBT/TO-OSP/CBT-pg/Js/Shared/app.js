@@ -259,6 +259,11 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
+$(document).ready(function () {
+  console.log("Hello World!");
+	alert("Halo!");
+});
+
 function hapus() {
     var questionOptions = document.querySelectorAll("#optionDiv > input");
     //var ele = document.querySelectorAll("input[type=radio]")[hps];
