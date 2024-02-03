@@ -257,6 +257,9 @@ document.addEventListener("keydown", function (e) {
 
 $(document).ready(function(){
 	$('.auto-save').savy('load');
+	$( "#hapus" ).click(function() {
+		$('.auto-save').savy('destroy');
+	});
 });
 
 function hapus() {
