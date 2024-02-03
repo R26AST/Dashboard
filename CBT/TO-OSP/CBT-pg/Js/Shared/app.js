@@ -289,7 +289,7 @@ function dijawab() {
 		selectAnswer(x, 4);
 	}
 }
-}
+
 
 function hapus() {
     var questionOptions = document.querySelectorAll("#optionDiv > input");
