@@ -289,6 +289,7 @@ yakinState = 0, raguState = 0;
 function ragu() {
     raguState = 1;
     if (answers[x] != -1) {
+	localStorage.setItem('nomor-ragu'+ x.toString() +'', 'ragu');
         document.querySelectorAll("#questionsButton > button")[x].classList.remove("greenHightlight");
         document.querySelectorAll("#questionsButton > button")[x].classList.add("orangeHightlight");
         yakinState = 1;
@@ -301,12 +302,16 @@ function yakin() {
     if (answers[x] != -1) {
     //if (answers[x] != -1 && yakinState != 0) {
         document.querySelectorAll("#questionsButton > button")[x].classList.add("currentQuestion");
-        
+        localStorage.removeItem('nomor-ragu'+ hps.toString() +'');
         document.querySelectorAll("#questionsButton > button")[x].classList.remove("orangeHightlight");
         document.querySelectorAll("#questionsButton > button")[x].classList.add("greenHightlight");
         yakinState = 0;
     }
     return yakinState;
+}
+
+if(localStorage.getItem('nomor-ragu'+ x.toString() +'') == 'ragu) {
+	ragu();
 }
 
 var modal = document.querySelector(".modal");
