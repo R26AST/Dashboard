@@ -132,6 +132,7 @@ function sebelum() {
     if (x < 0) {x = 0;}
     else {x = x;}
     showQuestion(x);
+	dijawab();
 	window.scroll({ top: 470, left: 0, behavior: 'smooth'});
 }
 function setelah() {
@@ -139,6 +140,7 @@ function setelah() {
     if(x > 14) {x = 14;}
     else {x = x;}
     showQuestion(x);
+	dijawab();
 	window.scroll({ top: 470, left: 0, behavior: 'smooth'});
 }
 
@@ -259,10 +261,32 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
-$(document).ready(function () {
-  console.log("Hello World!");
-	alert("Halo!");
-});
+$(document).ready(dijawab(););
+
+function dijawab() {
+	alert("Jawaban dipulihkan");
+	if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi0') {
+		document.getElementById("opsi0").checked = "true";
+		selectAnswer(x, 0);
+	}
+	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi1') {
+		document.getElementById("opsi1").checked = "true";
+		selectAnswer(x, 1);
+	}
+	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi2') {
+		document.getElementById("opsi2").checked = "true";
+		selectAnswer(x, 2);
+	}
+	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi3') {
+		document.getElementById("opsi3").checked = "true";
+		selectAnswer(x, 3);
+	}
+	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi4') {
+		document.getElementById("opsi4").checked = "true";
+		selectAnswer(x, 4);
+	}
+}
+}
 
 function hapus() {
     var questionOptions = document.querySelectorAll("#optionDiv > input");
