@@ -245,11 +245,11 @@ document.addEventListener("keydown", function (e) {
 	}
 });
 
-//$(document).ready(function () { dijawab(); });
+/*$(document).ready(function () { dijawab(); });
 document.addEventListener("DOMContentLoaded", () => {
   dijawab();
-  //terjawab();
-});
+  terjawab();
+});*/
 
 /*function terjawab() {
 	for(var i = 0; i < 15; i++) {
