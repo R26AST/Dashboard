@@ -32,8 +32,12 @@ function showCbt(){
     hps = 1;
 	
 	examLength = exam.duration; //Exam length in minutes
-    examTime = exam.duration;
+   	examTime = exam.duration;
 	detik = exam.duration * 60;
+	if(!localStorage.endTime)
+	{
+		localStorage.endTime = +new Date + detik * 1000;
+	}
     timerObject = setInterval(runTimer, 999);
 }
 
@@ -70,10 +74,15 @@ function setelah() {
 
 
 function runTimer() {  
-	let progressWidth = detik / (examTime * 60) * 100;	
-	//let progressWidth = (examLength / examTime) * 100;
-	progress.style.width = progressWidth + "%";
-	detik--;
+    var remaining = localStorage.endTime - new Date;
+	
+    var hour = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var min = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+    var sec = Math.floor((remaining % (1000 * 60)) / 1000);
+	
+    var progressWidth = ((remaining / 1000) / detik) * 100;
+	
+    progress.style.width = progressWidth + "%";
 	
     if (progressWidth > 66) {
         progress.style.backgroundColor = "#22baa0";
@@ -85,38 +94,13 @@ function runTimer() {
         progress.style.backgroundColor = "#f25656";
     }
 	
-    if(sec == 0){
-        if(examLength > 0){
-            examLength--;
-            sec = 59;
-            //progress.style.width = progressWidth + "%";
-        }
-        else{
-            progress.style.width = "0%";
-            submitExam();
-        }
+    if(remaining >= 0) {
+	$('#timerSpan').text('Sisa Waktu = ' + (hour < 10 ? '0' : '') + hour + ' : ' + (min < 10 ? '0' : '') + min + ' : ' + (sec < 10 ? '0' : '') + sec);
     }
     else{
-        sec--;
+        progress.style.width = "0%";
+        submitExam();
     }
-	
-	
-    var hour = Math.floor(examLength / 60);
-    var min = examLength % 60;
-	
-	if(sec <= 9 && min > 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : " + min.toString() + " : 0" + sec.toString();
-	}
-	else if(min <= 9 && sec > 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : 0" + min.toString() + " : " + sec.toString();
-	}
-	else if(min <= 9 && sec <= 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : 0" + min.toString() + " : 0" + sec.toString();
-	}
-	else {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : " + min.toString() + " : " + sec.toString();
-	}
-	
 }
 
 
@@ -251,6 +235,7 @@ $(document).ready(function(){
 
 function submitExam(){
     clearInterval(timerObject);
+    localStorage.removeItem("endTime");
     modal.style.display = "none";
     cekJawaban();
 	
