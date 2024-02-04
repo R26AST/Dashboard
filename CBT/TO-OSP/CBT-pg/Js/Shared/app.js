@@ -132,7 +132,6 @@ function sebelum() {
     if (x < 0) {x = 0;}
     else {x = x;}
     showQuestion(x);
-	dijawab();
 	window.scroll({ top: 470, left: 0, behavior: 'smooth'});
 }
 function setelah() {
@@ -140,7 +139,6 @@ function setelah() {
     if(x > 14) {x = 14;}
     else {x = x;}
     showQuestion(x);
-	dijawab();
 	window.scroll({ top: 470, left: 0, behavior: 'smooth'});
 }
 
@@ -177,20 +175,6 @@ function runTimer() {
 		detik--;
 		progress.style.width = progressWidth + "%";
     }
-    var hour = Math.floor(examLength / 60);
-    var min = examLength % 60;
-    if(sec <= 9 && min > 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : " + min.toString() + " : 0" + sec.toString();
-	}
-	else if(min <= 9 && sec > 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : 0" + min.toString() + " : " + sec.toString();
-	}
-	else if(min <= 9 && sec <= 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : 0" + min.toString() + " : 0" + sec.toString();
-	}
-	else {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : " + min.toString() + " : " + sec.toString();
-	}
 }
 
 
@@ -267,30 +251,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //terjawab();
 });
 
-function dijawab() {
-	//alert("Jawaban dipulihkan");
-	if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi0') {
-		document.getElementById("opsi0").checked = "true";
-		selectAnswer(x, 0);
-	}
-	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi1') {
-		document.getElementById("opsi1").checked = "true";
-		selectAnswer(x, 1);
-	}
-	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi2') {
-		document.getElementById("opsi2").checked = "true";
-		selectAnswer(x, 2);
-	}
-	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi3') {
-		document.getElementById("opsi3").checked = "true";
-		selectAnswer(x, 3);
-	}
-	else if (localStorage.getItem('savy-nomor'+ x +'') == 'opsi4') {
-		document.getElementById("opsi4").checked = "true";
-		selectAnswer(x, 4);
-	}
-}
-
 /*function terjawab() {
 	for(var i = 0; i < 15; i++) {
 		if(localStorage.getItem('savy-nomor'+ i +'') == 'opsi1' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi2' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi3' || localStorage.getItem('savy-nomor'+ i +'') == 'opsi4') {
@@ -320,13 +280,14 @@ function hapus() {
     document.querySelectorAll("#questionsButton > button")[x].classList.remove("greenHightlight");
 }
 
-function selectAnswer(questionNumber,optionNumber){
+function selectAnswer(questionNumber, optionNumber){
     raguState = 0;
     answers[questionNumber] = optionNumber;
     document.querySelectorAll("#questionsButton > button")[x].classList.remove("orangeHightlight");
     document.querySelectorAll("#questionsButton > button")[questionNumber].classList.add("greenHightlight");
     //document.querySelectorAll("#questionsButton > button")[questionNumber].className += " greenHightlight";
     answers[questionNumber] = optionNumber;
+    localStorage.setItem('answer', JSON.stringify(answers));
 }
 
 var yakinState, raguState;
@@ -402,10 +363,19 @@ function submitExam(){
     modal.style.display = "none";
     document.querySelector('.instructionLink').style.display = "none";
     var score = 0;
-    for(var i = 0; i < exam.questions.length; i++){
-        if(answers[i] == exam.questions[i].answerPosition){
-            score += 2;
-        }    
+    if(localStorage.getItem('answer') == null) {
+		for(var i = 0; i < exam.questions.length; i++) {
+			if(answers[i] == exam.questions[i].answerPosition) {
+				score += 2;
+			} 
+		}
+	}	
+	else {
+		for(var i = 0; i < exam.questions.length; i++) {
+			if(JSON.parse(localStorage.getItem('answer'))[i] == exam.questions[i].answerPosition) {
+				score += 2;
+			}
+		}			
     }
     
     sessionStorage.setItem("nilai", score);
@@ -442,6 +412,10 @@ function submitExam(){
     document.querySelector(".content > div:last-child > div").innerHTML = "Anda telah selesai mengerjakan, silakan melanjutkan ke soal Isian";
     document.querySelector(".content > div:last-child > div").innerHTML += "<br> <br> <br> <center><a class='kirim' href='OSP-isian.html' id='kembali' style='text-decoration: none;'>Lanjut Ke Soal Isian</a></center> <br> <br>"
     document.querySelector(".total").innerHTML = "Skor PG : " + score.toString();
+	
+	setInterval(function() {
+		localStorage.removeItem('answer');
+	}, 1000);
 }
 
 /*function setCookie(cname, value) {
