@@ -360,6 +360,7 @@ function promptUser(){
 
 function submitExam(){
     clearInterval(timerObject);
+    localStorage.removeItem("endTime");
     modal.style.display = "none";
     document.querySelector('.instructionLink').style.display = "none";
     var score = 0;
@@ -416,6 +417,10 @@ function submitExam(){
 	setInterval(function() {
 		localStorage.removeItem('answer');
 	}, 1000);
+
+	/*$('#kembali').click(function() {
+		localStorage.removeItem('answer');
+	});*/
 }
 
 /*function setCookie(cname, value) {
