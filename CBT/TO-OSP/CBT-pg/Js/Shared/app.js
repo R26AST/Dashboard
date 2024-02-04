@@ -358,6 +358,10 @@ function promptUser(){
     modal.style.display = "block";
 }
 
+if(sessionStorage.getItem('nilai') != null) {
+	submitExam();
+}
+
 function submitExam(){
     clearInterval(timerObject);
     localStorage.removeItem("endTime");
