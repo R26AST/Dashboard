@@ -143,8 +143,13 @@ function setelah() {
 }
 
 function runTimer() {  
-	let progressWidth = detik / (examTime * 60) * 100;
-    //let progressWidth = examLength / examTime * 100;
+  var remaining = localStorage.endTime - new Date;
+	
+  var hour = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var min = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+  var sec = Math.floor((remaining % (1000 * 60)) / 1000);
+	
+  var progressWidth = ((remaining / 1000) / detik) * 100;
 	
     if (progressWidth > 66) {
         progress.style.backgroundColor = "#22baa0";
@@ -155,25 +160,16 @@ function runTimer() {
     else if (progressWidth <= 33 && progressWidth > 0) {
         progress.style.backgroundColor = "#f25656";
     }
-            else {
-                progress.style.backgroundColor = "#22baa0";
-            }
+    else {
+ 	progress.style.backgroundColor = "#22baa0";
+    }
     
-    if(sec == 0){
-        if(examLength > 0){
-            examLength--;
-            sec = 59;
-            //progress.style.width = progressWidth + "%";
-        }
-        else{
-            progress.style.width = "0%";
-            submitExam();
-        }
+    if(remaining >= 0) {
+	$('#timerSpan').text('Sisa Waktu = ' + (hour < 10 ? '0' : '') + hour + ' : ' + (min < 10 ? '0' : '') + min + ' : ' + (sec < 10 ? '0' : '') + sec);
     }
     else{
-        sec--;
-		detik--;
-		progress.style.width = progressWidth + "%";
+        progress.style.width = "0%";
+        submitExam();
     }
 }
 
