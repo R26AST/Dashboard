@@ -118,7 +118,11 @@ function showCbt(){
     showQuestion(0);
     x = 0;
     hps = 0;
-	detik = exam.duration * 60;
+    detik = exam.duration * 60;
+	if(!localStorage.endTime)
+	{
+		localStorage.endTime = +new Date + detik * 1000;
+	}
     timerObject = setInterval(runTimer, 999);
 }
 
@@ -153,9 +157,14 @@ function setelah() {
 }
 
 function runTimer(){  
-	detik--;
+	var remaining = localStorage.endTime - new Date;
 	
-	let progressWidth = detik / (examTime * 60) * 100;
+	var hour = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var min = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+	var sec = Math.floor((remaining % (1000 * 60)) / 1000);
+	
+	var progressWidth = ((remaining / 1000) / detik) * 100;
+	
     //let progressWidth = examLength / examTime * 100;
 	progress.style.width = progressWidth + "%";
 
@@ -173,22 +182,18 @@ function runTimer(){
                 progress.style.backgroundColor = "#22baa0";
             }
     
-    if(sec == 0){
-        if(examLength > 0){
-            examLength--;
-            sec = 59;
+
+	if(remaining >= 0){
+            $('#timerSpan').text('Sisa Waktu = ' + (hour < 10 ? '0' : '') + hour + ' : ' + (min < 10 ? '0' : '') + min + ' : ' + (sec < 10 ? '0' : '') + sec);
             //progress.style.width = progressWidth + "%";
         }
         else{
             progress.style.width = "0%";
             submitExam();
         }
-    }
-    else{
-        sec--;
-    }
+
 	
-    var hour = Math.floor(examLength / 60);
+    /*var hour = Math.floor(examLength / 60);
     var min = examLength % 60;
     if(sec <= 9 && min > 9) {
 		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : " + min.toString() + " : 0" + sec.toString();
@@ -201,7 +206,7 @@ function runTimer(){
 	}
 	else {
 		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : " + min.toString() + " : " + sec.toString();
-	}
+	}*/
 }
 
 
@@ -356,6 +361,7 @@ function promptUser(){
 
 function submitExam(){
     clearInterval(timerObject);
+    localStorage.removeItem("endTime");
     modal.style.display = "none";
     document.querySelector('.instructionLink').style.display = "none";
     var score = 0;
