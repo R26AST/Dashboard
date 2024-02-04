@@ -344,6 +344,7 @@ function selectAnswer(questionNumber,optionNumber){
     document.querySelectorAll("#questionsButton > button")[questionNumber].classList.add("greenHightlight");
     //document.querySelectorAll("#questionsButton > button")[questionNumber].className += " greenHightlight";
     answers[questionNumber] = optionNumber;
+    localStorage.setItem('answer', JSON.stringify(answers));
 }
 
 var yakinState, raguState;
@@ -416,10 +417,19 @@ function submitExam(){
     localStorage.removeItem("endTime");
     modal.style.display = "none";
     score = 0;
-    for(var i = 0; i < exam.questions.length; i++){
-        if(answers[i] == exam.questions[i].answerPosition){
-            score++;
-        }    
+    if(localStorage.getItem('answer') == null) {
+		for(var i = 0; i < exam.questions.length; i++) {
+			if(answers[i] == exam.questions[i].answerPosition) {
+				score += 2;
+			} 
+		}
+	}	
+	else {
+		for(var i = 0; i < exam.questions.length; i++) {
+			if(JSON.parse(localStorage.getItem('answer'))[i] == exam.questions[i].answerPosition) {
+				score += 2;
+			}
+		}			
     }
 
     document.querySelector(".instructionLink").style.display = "none";
@@ -465,6 +475,10 @@ function submitExam(){
         if (nama.value != "" && kelas.value != "") {
            btn.style.display = "block";
         }
+
+	setInterval(function() {
+		localStorage.removeItem('answer');
+	}, 1000);
 }
 
 function stopWebcam(e) {
