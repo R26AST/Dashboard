@@ -200,6 +200,30 @@ function showQuestion(questionNumber) {
 		//optionDiv.innerHTML += `<br><label><input type="radio" name="questionOptions" onclick="selectAnswer('questionNumber', 'i')"> ${exam.questions[questionNumber].options[i].toString()}</label><br>`;
      
 	 }
+
+	document.addEventListener("keydown", function (e) {
+		//Memilih jawaban dengan keyboard
+		if (e.key === "A" || e.key === "a") {
+			document.getElementById("opsi0").checked = "true";
+			selectAnswer(questionNumber, 0);
+		}
+		else if (e.key === "B" || e.key === "b") {
+			document.getElementById("opsi1").checked = "true";
+			selectAnswer(questionNumber, 1);
+		}
+		else if (e.key === "C" || e.key === "c") {
+			document.getElementById("opsi2").checked = "true";
+			selectAnswer(questionNumber, 2);
+		}
+		else if (e.key === "D" || e.key === "d") {
+			document.getElementById("opsi3").checked = "true";
+			selectAnswer(questionNumber, 3);
+		}
+		else if (e.key === "E" || e.key === "e") {
+			document.getElementById("opsi4").checked = "true";
+			selectAnswer(questionNumber, 4);
+		}
+	});
     
     $(document).ready(function(){
 	$('.auto-save').savy('load');
@@ -221,7 +245,7 @@ function showQuestion(questionNumber) {
     
 }
 
-document.addEventListener("keydown", function (e) {
+/*document.addEventListener("keydown", function (e) {
 	//Memilih jawaban dengan keyboard
 	if (e.key === "A" || e.key === "a") {
 		document.getElementById("opsi0").checked = "true";
@@ -243,7 +267,7 @@ document.addEventListener("keydown", function (e) {
 		document.getElementById("opsi4").checked = "true";
 		selectAnswer(x, 4);
 	}
-});
+});*/
 
 /*$(document).ready(function () { dijawab(); });
 document.addEventListener("DOMContentLoaded", () => {
