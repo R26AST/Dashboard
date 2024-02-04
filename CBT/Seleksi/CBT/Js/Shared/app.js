@@ -157,7 +157,7 @@ var exam = {
     ]
 }
 
-var sec = 0, x, hps, score = 0;
+var sec = 0, x, hps, score = 0, detik;
 var timerObject;
 
 var questionDiv = document.getElementById("questionDiv");
@@ -192,6 +192,11 @@ function showCbt(){
     showQuestion(0);
     x = 0;
     hps = 0;
+	detik = exam.duration * 60;
+	if(!localStorage.endTime)
+	{
+		localStorage.endTime = +new Date + detik * 1000;
+	}
     timerObject = setInterval(runTimer, 999);
 }
 
@@ -226,7 +231,14 @@ function setelah() {
 }
 
 function runTimer(){  
-    let progressWidth = examLength / examTime * 100;
+    var remaining = localStorage.endTime - new Date;
+	
+    var hour = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var min = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+    var sec = Math.floor((remaining % (1000 * 60)) / 1000);
+	
+    var progressWidth = ((remaining / 1000) / detik) * 100;
+	
     if (progressWidth > 66) {
         progress.style.backgroundColor = "#22baa0";
     }
@@ -236,38 +248,17 @@ function runTimer(){
     else if (progressWidth <= 33 && progressWidth > 0) {
         progress.style.backgroundColor = "#f25656";
     }
-            else {
-                progress.style.backgroundColor = "#22baa0";
-            }
+   else {
+        progress.style.backgroundColor = "#22baa0";
+  }
     
-    if(sec == 0){
-        if(examLength > 0){
-            examLength--;
-            sec = 59;
-            progress.style.width = progressWidth + "%";
-        }
-        else{
-            progress.style.width = "0%";
-            submitExam();
-        }
-    }
-    else{
-        sec--;
-    }
-    var hour = Math.floor(examLength / 60);
-    var min = examLength % 60;
-    if(sec <= 9 && min > 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : " + min.toString() + " : 0" + sec.toString();
-	}
-	else if(min <= 9 && sec > 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : 0" + min.toString() + " : " + sec.toString();
-	}
-	else if(min <= 9 && sec <= 9) {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : 0" + min.toString() + " : 0" + sec.toString();
-	}
-	else {
-		document.getElementById("timerSpan").innerHTML = "Sisa Waktu = 0" + hour.toString() + " : " + min.toString() + " : " + sec.toString();
-	}
+  if(remaining >= 0) {
+	$('#timerSpan').text('Sisa Waktu = ' + (hour < 10 ? '0' : '') + hour + ' : ' + (min < 10 ? '0' : '') + min + ' : ' + (sec < 10 ? '0' : '') + sec);
+  }	
+  else{
+        progress.style.width = "0%";
+        submitExam();
+  }
 }
 
 
@@ -422,6 +413,7 @@ function submitExam(){
     video.style.display = "none";
     stopWebcam();
     clearInterval(timerObject);
+    localStorage.removeItem("endTime");
     modal.style.display = "none";
     score = 0;
     for(var i = 0; i < exam.questions.length; i++){
