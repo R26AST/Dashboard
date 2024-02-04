@@ -109,6 +109,10 @@ function showCbt(){
     x = 0;
     hps = 0;
 	detik = exam.duration * 60;
+	if(!localStorage.endTime)
+	{
+		localStorage.endTime = +new Date + detik * 1000;
+	}
     timerObject = setInterval(runTimer, 999);
 }
 
