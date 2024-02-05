@@ -58,7 +58,7 @@ var exam = {
         {
             "question": 'Suatu komet yang mengorbit matahari, memiliki periode orbit selama 16 tahun dan eksentrisitas sebesar 0,7. Berapakah jarak terdekat dari orbit komet tersebut?',
             "options": ["1,9 sa", "4,44 sa", "4,8 sa", "6,35 sa", "11,2 sa"],
-            "answerPosition": 3
+            "answerPosition": 1
         },
         {
             "question": "Suatu bintang yang berjarak 64pc, bergerak menjauhi Bumi dengan kecepatan radial 37km/s. Apabila kecepatan ruang bintang tersebut adalah 43km/s, berapa besar gerak diri bintang tersebut?",
@@ -81,7 +81,7 @@ var exam = {
             "answerPosition": 1
         },
         {
-            "question": "Suatu asteroid menghantam permukaan Bumi, apabila asteroid tersebut memiliki massa sekitar 1 kwintal, radius 26 meter, dan kecepatan 57 km/s. Berapakah energi kinetik dari asteroid tersebut?",
+            "question": "Suatu asteroid menghantam permukaan Bumi, apabila asteroid tersebut memiliki massa sekitar 1 kwintal, radius 26 meter, dan kecepatan 57 m/s. Berapakah energi kinetik dari asteroid tersebut?",
             "options": ["285000 J", "3249000 J", "1624500 J", "324900 J", "162450 J"],
             "answerPosition": 4
         },
