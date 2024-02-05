@@ -441,7 +441,7 @@ function submitExam(){
     document.querySelector(".pSubmit").style.display = "none";
     document.querySelector(".content > div:last-child > div").innerHTML = "Anda telah selesai mengerjakan ujian. <br> <br> <br> Keterangan kunci : <br> 0 = A, 1 = B, 2 = C, 3 = D, 4 = E <br> <br> <br> ";
     document.querySelector(".content > div:last-child > div").innerHTML += "Jawaban Anda : "+ JSON.parse(localStorage.getItem('answer')) +"<br> <br> <br>";
-    document.querySelector(".content > div:last-child > div").innerHTML += "Kunci Jawaban : "+ for(var i = 0; i < exam.questions.length; i++) {exam.questions[i].answerPosition} +"<br> <br> <br>";
+    document.querySelector(".content > div:last-child > div").innerHTML += "Kunci Jawaban : "+ exam.answerPosition +"<br> <br> <br>";
     document.querySelector(".content > div:last-child > div").innerHTML += "<br> <br> <br> <center><a class='kirim' href='https://r26ast.github.io/Dashboard/' id='kembali' style='text-decoration: none;'>Kembali</a></center> <br> <br>"
     document.querySelector(".total").innerHTML = "Nilai : " + score.toString();
 }
