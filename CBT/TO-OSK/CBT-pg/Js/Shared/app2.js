@@ -230,7 +230,7 @@ function showQuestion(questionNumber){
 	document.getElementById("abj1").innerHTML = "B";
 	document.getElementById("abj2").innerHTML = "C";
 	document.getElementById("abj3").innerHTML = "D";
-	document.getElementById("abj4").innerHTML = "E";*/
+	document.getElementById("abj4").innerHTML = "E";*/ 
 
 	document.addEventListener("keydown", function (e) {
 		//Memilih jawaban dengan keyboard
