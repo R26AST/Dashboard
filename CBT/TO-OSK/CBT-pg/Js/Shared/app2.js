@@ -232,7 +232,7 @@ function showQuestion(questionNumber){
 	document.getElementById("abj3").innerHTML = "D";
 	document.getElementById("abj4").innerHTML = "E";*/ 
 
-	document.addEventListener("keydown", function (e) {
+	/*document.addEventListener("keydown", function (e) {
 		//Memilih jawaban dengan keyboard
 		if (e.key === "A" || e.key === "a") {
 			document.getElementById("opsi0").checked = "true";
@@ -254,7 +254,7 @@ function showQuestion(questionNumber){
 			document.getElementById("opsi4").checked = "true";
 			selectAnswer(questionNumber, 4);
 		}
-	});
+	});*/
     
     $(document).ready(function(){
 	$('.auto-save').savy('load');
@@ -276,7 +276,7 @@ function showQuestion(questionNumber){
     
 }
 
-/*document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", function (e) {
 	//Memilih jawaban dengan keyboard
 	if (e.key === "A" || e.key === "a") {
 		document.getElementById("opsi0").checked = "true";
@@ -298,7 +298,7 @@ function showQuestion(questionNumber){
 		document.getElementById("opsi4").checked = "true";
 		selectAnswer(x, 4);
 	}
-});*/
+});
 
 function hapus() {
     var questionOptions = document.querySelectorAll("#optionDiv > input");
