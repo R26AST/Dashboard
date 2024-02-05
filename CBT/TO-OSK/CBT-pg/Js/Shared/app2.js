@@ -1,7 +1,7 @@
 //This is an example of a json data
 //NB: The questions are supposed to be served from an api not added in the javascript
 var exam = {
-    "duration": 90,
+    "duration": 60,
     "instruction": "Jawablah dengan menekan tombol opsi jawaban yang tersedia.<br><br>Untuk pengguna komputer/laptop sendiri dapat menekan tombol A, B, C, D, atau E pada keyboard untuk menjawab.",
     "questions":[
         {
@@ -231,7 +231,34 @@ function showQuestion(questionNumber){
 	document.getElementById("abj2").innerHTML = "C";
 	document.getElementById("abj3").innerHTML = "D";
 	document.getElementById("abj4").innerHTML = "E";*/
+
+	document.addEventListener("keydown", function (e) {
+		//Memilih jawaban dengan keyboard
+		if (e.key === "A" || e.key === "a") {
+			document.getElementById("opsi0").checked = "true";
+			selectAnswer(questionNumber, 0);
+		}
+		else if (e.key === "B" || e.key === "b") {
+			document.getElementById("opsi1").checked = "true";
+			selectAnswer(questionNumber, 1);
+		}
+		else if (e.key === "C" || e.key === "c") {
+			document.getElementById("opsi2").checked = "true";
+			selectAnswer(questionNumber, 2);
+		}
+		else if (e.key === "D" || e.key === "d") {
+			document.getElementById("opsi3").checked = "true";
+			selectAnswer(questionNumber, 3);
+		}
+		else if (e.key === "E" || e.key === "e") {
+			document.getElementById("opsi4").checked = "true";
+			selectAnswer(questionNumber, 4);
+		}
+	});
     
+    $(document).ready(function(){
+	$('.auto-save').savy('load');
+    });
     
     const questionButton = document.querySelectorAll("#questionsButton > button");
     for(let i = 0; i < questionButton.length; i++){
@@ -249,7 +276,7 @@ function showQuestion(questionNumber){
     
 }
 
-document.addEventListener("keydown", function (e) {
+/*document.addEventListener("keydown", function (e) {
 	//Memilih jawaban dengan keyboard
 	if (e.key === "A" || e.key === "a") {
 		document.getElementById("opsi0").checked = "true";
@@ -271,7 +298,7 @@ document.addEventListener("keydown", function (e) {
 		document.getElementById("opsi4").checked = "true";
 		selectAnswer(x, 4);
 	}
-});
+});*/
 
 function hapus() {
     var questionOptions = document.querySelectorAll("#optionDiv > input");
@@ -294,6 +321,7 @@ function selectAnswer(questionNumber,optionNumber){
     document.querySelectorAll("#questionsButton > button")[questionNumber].classList.add("greenHightlight");
     //document.querySelectorAll("#questionsButton > button")[questionNumber].className += " greenHightlight";
     answers[questionNumber] = optionNumber;
+	localStorage.setItem('answer', JSON.stringify(answers));
 }
 
 var yakinState, raguState;
@@ -365,10 +393,19 @@ function submitExam(){
     modal.style.display = "none";
     document.querySelector('.instructionLink').style.display = "none";
     var score = 0;
-    for(var i = 0; i < exam.questions.length; i++){
-        if(answers[i] == exam.questions[i].answerPosition){
-            score += 2;
-        }    
+    if(localStorage.getItem('answer') == null) {
+		for(var i = 0; i < exam.questions.length; i++) {
+			if(answers[i] == exam.questions[i].answerPosition) {
+				score += 5;
+			} 
+		}
+	}	
+	else {
+		for(var i = 0; i < exam.questions.length; i++) {
+			if(JSON.parse(localStorage.getItem('answer'))[i] == exam.questions[i].answerPosition) {
+				score += 5;
+			}
+		}			
     }
     
     localStorage.setItem("TO_OSK", score);
@@ -402,7 +439,9 @@ function submitExam(){
     
     document.querySelector(".daftar").style.display = "none";
     document.querySelector(".pSubmit").style.display = "none";
-    document.querySelector(".content > div:last-child > div").innerHTML = "Anda telah selesai mengerjakan ujian";
+    document.querySelector(".content > div:last-child > div").innerHTML = "Anda telah selesai mengerjakan ujian. <br> <br> <br> Keterangan kunci : 0 = A, 1 = B, 2 = C, 3 = D, 4 = E";
+    document.querySelector(".content > div:last-child > div").innerHTML = "Jawaban Anda :"+ JSON.parse(localStorage.getItem('answer')) +"<br> <br> <br>";
+    document.querySelector(".content > div:last-child > div").innerHTML = "Kunci Jawaban :"+ exam.questions.answerPosition +"<br> <br> <br>";
     document.querySelector(".content > div:last-child > div").innerHTML += "<br> <br> <br> <center><a class='kirim' href='https://r26ast.github.io/Dashboard/' id='kembali' style='text-decoration: none;'>Kembali</a></center> <br> <br>"
     document.querySelector(".total").innerHTML = "Nilai : " + score.toString();
 }
