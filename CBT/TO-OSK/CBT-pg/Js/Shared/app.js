@@ -78,7 +78,7 @@ var exam = {
         {
             "question": "Berapakah perbandingan diameter sudut bulan purnama saat <i>perigee</i> dan <i>aphogee</i>?",
             "options": ["0,8", "0,9", "1", "1,1", "1,22"],
-            "answerPosition": 1
+            "answerPosition": 3
         },
         {
             "question": "Suatu asteroid menghantam permukaan Bumi, apabila asteroid tersebut memiliki massa sekitar 1 kwintal, radius 26 meter, dan kecepatan 57 m/s. Berapakah energi kinetik dari asteroid tersebut?",
