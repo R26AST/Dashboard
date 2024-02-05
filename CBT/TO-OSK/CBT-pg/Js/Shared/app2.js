@@ -439,7 +439,7 @@ function submitExam(){
     
     document.querySelector(".daftar").style.display = "none";
     document.querySelector(".pSubmit").style.display = "none";
-    document.querySelector(".content > div:last-child > div").innerHTML = "Anda telah selesai mengerjakan ujian. <br> <br> <br> Keterangan kunci : 0 = A, 1 = B, 2 = C, 3 = D, 4 = E";
+    document.querySelector(".content > div:last-child > div").innerHTML = "Anda telah selesai mengerjakan ujian. <br> <br> <br> Keterangan kunci : 0 = A, 1 = B, 2 = C, 3 = D, 4 = E <br> <br> <br> ";
     document.querySelector(".content > div:last-child > div").innerHTML = "Jawaban Anda :"+ JSON.parse(localStorage.getItem('answer')) +"<br> <br> <br>";
     document.querySelector(".content > div:last-child > div").innerHTML = "Kunci Jawaban :"+ exam.questions.answerPosition +"<br> <br> <br>";
     document.querySelector(".content > div:last-child > div").innerHTML += "<br> <br> <br> <center><a class='kirim' href='https://r26ast.github.io/Dashboard/' id='kembali' style='text-decoration: none;'>Kembali</a></center> <br> <br>"
