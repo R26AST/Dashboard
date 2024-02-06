@@ -446,6 +446,10 @@ function submitExam(){
     document.querySelector(".content > div:last-child > div").innerHTML += "Kunci Jawaban : "+ kunci +"<br> <br> <br>";
     document.querySelector(".content > div:last-child > div").innerHTML += "<br> <br> <br> <center><a class='kirim' href='https://r26ast.github.io/Dashboard/' id='kembali' style='text-decoration: none;'>Kembali</a></center> <br> <br>"
     document.querySelector(".total").innerHTML = "Nilai : " + score.toString();
+
+	$('kembali').click(function() {
+		localStorage.removeItem('answer'); 
+	});
 }
 
 /*function setCookie(cname, value) {
