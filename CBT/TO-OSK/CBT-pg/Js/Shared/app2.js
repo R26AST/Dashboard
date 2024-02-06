@@ -93,7 +93,7 @@ var exam = {
     ]
 }
 
-let kunci = [0,0,3,4,2,3,1,2,1,0,2,0,3,4,2];
+let kunci = [0, 0, 3, 4, 2, 3, 1, 2, 1, 0, 2, 0, 3, 4, 2];
 
 var sec = 0, detik, x, hps;
 var timerObject;
