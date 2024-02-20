@@ -5,22 +5,22 @@ var exam = {
     "instruction": "Jawablah dengan menekan tombol opsi jawaban yang tersedia.<br><br>Untuk pengguna komputer/laptop sendiri dapat menekan tombol A, B, C, D, atau E pada keyboard untuk menjawab.",
     "questions":[
         {
-            "question": 'Suatu benda logam dipanaskan hingga memiliki suhu 1000°C. Berapakah panjang gelombang maksimum yang dipancarkan oleh logam tersebut? <br><br>Konstanta Wien = 2,9 × 10<sup>-3</sup> m K',
+            "question": 'Sebuah asteroid misterius memiliki periode orbit 54 tahun, dan memiliki eksentrisitas 0,37. Pada tanggal 8 Juli 2271, asteroid ini mencapai titik terjauhnya. Kapankah asteroid ini mencapai jarak terdekatnya dari Matahari?',
             "options": ["2278 nm", "2900 nm", "2112 nm", "227,8 nm", "290 nm"],
             "answerPosition": 0
         },
         {
-            "question": "Hari tanpa bayangan merupakan suatu fenomena dimana matahari tepat di atas kepala/zenith. Pilihlah salah satu pernyataan berikut yang benar!",
+            "question": "Anggaplah kita hidup di masa depan dengan teknologi yang amat canggih. Terdapat sebuah teleskop yang mampu menangkap foto bintang yang teramat jauh. Bintang tersebut diestimasikan memiliki paralaks sebesar 2 pas (pico arcsecond). Estimasi jarak dari bintang tersebut adalah ...",
             "options":["Indonesia mengalaminya 2 kali dalam setahun", "Dapat dialami Di Kutub Bumi", "Tidak dapat digunakan sebagai penunjuk arah", "Hari tanpa bayangan dapat terjadi setiap hari", "Tidak Tahu"],
             "answerPosition": 0
         },
         {
-            "question": "Suatu bintang teramati memiliki paralaks sebesar 80 mas (mas : milli arcsecond/milidetik busur), berapakah jarak bintang tersebut dari Matahari?",
+            "question": "Consider the binary system Kepler-16, which has the primary star Kepler-16A and the secondary star Kepler-16B. It has an orbital period P = 41.08 days and the measured parallax is p =13.29 mas. Calculate the total mass of the stars, using the fact that their maximum angular separation measured from Earth is θ = 2.98 mas and they are on an edge-on orbit.",
             "options": ["0,0125 pc", "0,125 pc", "1,25 pc", "12,5 pc", "125 pc"],
             "answerPosition": 3
         },
         {
-            "question": "Berapakah perbandingan Luminositas yang dihasilkan oleh suatu bintang terhadap matahari, dengan radius bintang = 5 kali radius matahari, serta temperatur 7 kali temperatur efektif matahari.",
+            "question": 'Dua buah bintang terpisah sebesar 2.6 derajat di langit. Kedua bintang tersebut masing-masing memiliki paralaks 0.07" dan 0.32". Berapakah jarak antara kedua bintang tersebut?',
             "options": ["35", "175", "1225", "10025", "60025"],
             "answerPosition": 4
         },
