@@ -77,7 +77,8 @@ var exam = {
         },
         {
             "question": `A star with a density that is not homogeneous, follows the equation : 
-	    <img src=".jpg" />
+	    /*<img src=".jpg" /> */
+     <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>d</mi><mi>M</mi></mrow><mrow><mi>d</mi><mi>r</mi></mrow></mfrac><mo>=</mo><mn>4</mn><mi>&#x3c0;</mi><msup><mi>r</mi><mn>2</mn></msup><mi>&#x3c1;</mi><mo>(</mo><mi>r</mi><mo>)</mo></math>
 		    Where r is a distance from center to some point of <i>r</i> and <i>R</i> was the radius of 
       the stars, which is equals to 5 times radius of the sun, while <i>ρ<sub>0</sub></i> = 3700<i>kg/m<sup>3</sup></i>
       Calculate the accumulated mass at the distance of 1/2 <i>R</i>! (Hint : Use the continuity mass equation! 
