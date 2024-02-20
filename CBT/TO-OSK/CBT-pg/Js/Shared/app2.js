@@ -76,13 +76,14 @@ var exam = {
             "answerPosition": 0
         },
         {
-            "question": `A star with a density that is not homogeneous, follows the equation : 
-	    /*<img src=".jpg" /> */
-     <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>d</mi><mi>M</mi></mrow><mrow><mi>d</mi><mi>r</mi></mrow></mfrac><mo>=</mo><mn>4</mn><mi>&#x3c0;</mi><msup><mi>r</mi><mn>2</mn></msup><mi>&#x3c1;</mi><mo>(</mo><mi>r</mi><mo>)</mo></math>
-		    Where r is a distance from center to some point of <i>r</i> and <i>R</i> was the radius of 
+            "question": `A star with a density that is not homogeneous, follows the equation : <br>
+      <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>&#x3c1;</mi><mo>(</mo><mi>r</mi><mo>)</mo><mo>=</mo><msub><mi>&#x3c1;</mi><mn>0</mn></msub><mo>(</mo><mn>1</mn><mo>-</mo><mfrac><mrow><mn>2</mn><mi>r</mi></mrow><mi>R</mi></mfrac><mo>)</mo></math>
+	<br>Where <i>r</i> is a distance from center to some point of <i>r</i> and <i>R</i> was the radius of 
       the stars, which is equals to 5 times radius of the sun, while <i>ρ<sub>0</sub></i> = 3700<i>kg/m<sup>3</sup></i>
-      Calculate the accumulated mass at the distance of 1/2 <i>R</i>! (Hint : Use the continuity mass equation! 
-      <img src="conti-mass.jpg" />) `,
+      Calculate the accumulated mass at the distance of 1/2 <i>R</i> ! 
+      <br>(Hint : Use the continuity mass equation! <br>
+      <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>d</mi><mi>M</mi></mrow><mrow><mi>d</mi><mi>r</mi></mrow></mfrac><mo>=</mo><mn>4</mn><mi>&#x3c0;</mi><msup><mi>r</mi><mn>2</mn></msup><mi>&#x3c1;</mi><mo>(</mo><mi>r</mi><mo>)</mo></math>
+     ) `,
             "options": ["0,8", "0,9", "1", "1,1", "1,22"],
             "answerPosition": 3
         },
