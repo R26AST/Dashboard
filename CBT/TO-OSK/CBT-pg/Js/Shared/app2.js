@@ -11,8 +11,8 @@ var exam = {
         },
         {
             "question": "Anggaplah kita hidup di masa depan dengan teknologi yang amat canggih. Terdapat sebuah teleskop yang mampu menangkap foto bintang yang teramat jauh. Bintang tersebut diestimasikan memiliki paralaks sebesar 2 pas (pico arcsecond). Estimasi jarak dari bintang tersebut adalah ...",
-            "options":["Indonesia mengalaminya 2 kali dalam setahun", "Dapat dialami Di Kutub Bumi", "Tidak dapat digunakan sebagai penunjuk arah", "Hari tanpa bayangan dapat terjadi setiap hari", "Tidak Tahu"],
-            "answerPosition": 0
+            "options":["50pc", "50kpc", "50Mpc", "50Gpc", "500Gpc"],
+            "answerPosition": 4
         },
         {
             "question": "Consider the binary system Kepler-16, which has the primary star Kepler-16A and the secondary star Kepler-16B. It has an orbital period P = 41.08 days and the measured parallax is p =13.29 mas. Calculate the total mass of the stars, using the fact that their maximum angular separation measured from Earth is θ = 2.98 mas and they are on an edge-on orbit.",
@@ -21,8 +21,8 @@ var exam = {
         },
         {
             "question": 'Dua buah bintang terpisah sebesar 2.6 derajat di langit. Kedua bintang tersebut masing-masing memiliki paralaks 0.07" dan 0.32". Berapakah jarak antara kedua bintang tersebut?',
-            "options": ["35", "175", "1225", "10025", "60025"],
-            "answerPosition": 4
+            "options": ["35", "175", "11,6pc", "10025", "60025"],
+            "answerPosition": 2
         },
         {
            "question": `Sebuah benda memiliki berat 50N jika berada di Bumi, berapakah berat benda tersebut jika berada di Jupiter?
