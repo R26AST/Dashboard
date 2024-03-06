@@ -16,7 +16,7 @@ var exam = {
         },
         {
             "question": "Consider the binary system Kepler-16, which has the primary star Kepler-16A and the secondary star Kepler-16B. It has an orbital period P = 41.08 days and the measured parallax is p =13.29 mas. Calculate the total mass of the stars, using the fact that their maximum angular separation measured from Earth is θ = 2.98 mas and they are on an edge-on orbit.",
-            "options": ["0,0125 pc", "0,125 pc", "1,25 pc", "12,5 pc", "125 pc"],
+            "options": ["0.5 M<sub></sub>", "0.7 M<sub></sub>", "0.8 M<sub></sub>", "1 M<sub></sub>", "1.25 M<sub></sub>"],
             "answerPosition": 3
         },
         {
