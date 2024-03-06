@@ -6,8 +6,8 @@ var exam = {
     "questions":[
         {
             "question": 'Sebuah asteroid misterius memiliki periode orbit 54 tahun, dan memiliki eksentrisitas 0,37. Pada tanggal 8 Juli 2271, asteroid ini mencapai titik terjauhnya. Kapankah asteroid ini mencapai jarak terdekatnya dari Matahari?',
-            "options": ["2278 nm", "2900 nm", "2112 nm", "227,8 nm", "290 nm"],
-            "answerPosition": 0
+            "options": ["Tahun 2379", "Tahun 2346", "Tahun 2325", "Tahun 2298", "Tahun 2271"],
+            "answerPosition": 3
         },
         {
             "question": "Anggaplah kita hidup di masa depan dengan teknologi yang amat canggih. Terdapat sebuah teleskop yang mampu menangkap foto bintang yang teramat jauh. Bintang tersebut diestimasikan memiliki paralaks sebesar 2 pas (pico arcsecond). Estimasi jarak dari bintang tersebut adalah ...",
