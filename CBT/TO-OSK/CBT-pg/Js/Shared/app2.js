@@ -20,7 +20,7 @@ var exam = {
             "answerPosition": 3
         },
         {
-            "question": 'Dua buah bintang terpisah sebesar 2.6 derajat di langit. Kedua bintang tersebut masing-masing memiliki paralaks 0.07" dan 0.32". Berapakah jarak antara kedua bintang tersebut?',
+            "question": 'Dua buah bintang terpisah sebesar 2,6 derajat di langit. Kedua bintang tersebut masing-masing memiliki paralaks 0,07" dan 0,32". Berapakah jarak antara kedua bintang tersebut?',
             "options": ["35", "175", "11,6pc", "10025", "60025"],
             "answerPosition": 2
         },
@@ -40,13 +40,13 @@ var exam = {
             "answerPosition":3
         },
         {
-            "question": "Sebuah planet yang bermassa 6 x 10<sup>25</sup> kg mengorbit bintang induknya dengan kecepatan 17 km/s. Jika planet dianggap sebagai benda partikel dan momentum sudut sistem bernilai 2.6 x 10<sup>38</sup> kg m<sup>2</sup>/s, tentukan periode planet tersebut!",
+            "question": "Sebuah planet yang bermassa 6 x 10<sup>25</sup> kg mengorbit bintang induknya dengan kecepatan 17 km/s. Jika planet dianggap sebagai benda partikel dan momentum sudut sistem bernilai 2,6 x 10<sup>38</sup> kg m<sup>2</sup>/s, tentukan periode planet tersebut!",
             "options": ["3,5", "2,5", "1,5", "2", "17,3"],
             "answerPosition": 1
         },
         {
-            "question": "Planet Jupiter merupakan planet gas di sistem Tata Surya kita. Jupiter memiliki massa sebesar 1,898 × 10<sup>27</sup> kg, radius sebesar 6,99 × 10<sup>7</sup> m. Berapakah kecepatan minimum agar sebuah benda dapat lepas dari gravitasi Jupiter?",
-            "options": ["42,6 km/s", "52,6 km/s", "60,2 km/s", "70,2 km/s", "Tidak dapat dihitung"],
+            "question": "Sebuah yang planet mengorbit matahari memiliki periode orbit 10747 hari, dengan jarak rata-rata dari matahari 10 AU. Tentukan kecepatan planet tersebut!",
+            "options": ["1,6 km/s", "7,89 km/s", "8,32 km/s", "9,67 km/s", "10,12 km/s"],
             "answerPosition": 2
         },
         {
