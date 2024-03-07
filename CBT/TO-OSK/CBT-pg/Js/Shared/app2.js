@@ -25,15 +25,9 @@ var exam = {
             "answerPosition": 2
         },
         {
-           "question": `Sebuah benda memiliki berat 50N jika berada di Bumi, berapakah berat benda tersebut jika berada di Jupiter?
-							<br>
-							<br>Massa Bumi = 5,97 × 10<sup>24</sup> kg
-							<br>Radius Bumi  = 6,378 × 10<sup>6</sup> m
-							<br>Massa Jupiter = 1,898 × 10<sup>27</sup> kg
-							<br>Radius Jupiter = 6,99 × 10<sup>7</sup> m
-							<br>Konstanta Gravitasi = 6,673 × 10<sup>-11</sup> N kg<sup>-2</sup> m<sup>2</sup>`,
-            "options": ["50 N", "100 N", "132 N", "152 N", "173 N"],
-            "answerPosition": 2
+           "question": `Sebuah bintang yang memiliki luminositas yang sama dengan Matahari (Mv = 4,7 mag) berjarak 26 parsek dari Bumi. Tentukanlah magnitudo semu bintang tersebut dan apakah bintang tersebut dapat terlihat dari Bumi. (Abaikan ekstingsi atmosfer dan materi antar bintang)`,
+            "options": ["6,77 mag dan terlihat", "6,77 mag dan tidak terlihat", "5,77 mag dan terlihat", "5,77 mag dan tidak terlihat", "4,77 mag dan terlihat"],
+            "answerPosition": 1
         },
         {
             "question": `Diberikan beberapa data dan konstanta astronomi sebagai berikut :
@@ -73,7 +67,7 @@ var exam = {
         {
             "question": "Diketahui sebuah sistem planet di sebuah galaksi yang sangat jauh dari Bumi. Sistem planet tersebut terdiri dari sebuah bintang deret utama sebagai bintang induk dan 5 planet. Salah satu planet yang mengorbit bintang deret utama tersebut memiliki sumbu semi mayor sebesar 2,6 SA dan periode orbit selama 2 tahun. Perkirakanlah luminositas dari bintang induk tersebut dalam satuan luminositas Matahari!",
             "options": ["1,3 L<sub>⊙</sub>", "4,394 L<sub>⊙</sub>", "19,3 L<sub>⊙</sub>", "177,8 L<sub>⊙</sub>", "1 L<sub>⊙</sub>"],
-            "answerPosition": 0
+            "answerPosition": 3
         },
         {
             "question": `A star with a density that is not homogeneous, follows the equation : <br><br>
