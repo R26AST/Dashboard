@@ -71,8 +71,8 @@ var exam = {
             "answerPosition": 2
         },
         {
-            "question": "Sebuah bintang memiliki massa dan radius yang sama besarnya dengan matahari. Bintang tersebut kemudian runtuh menjadi bintang dengan radius 17 km, namun dengan massa yang tetap. Berapakah perbandingan antara periode rotasi bintang tersebut sebelum dan sesudah runtuh?",
-            "options": ["1,6762 × 10<sup>9</sup>", "4,094 × 10<sup>4</sup>", "5,966 10<sup>-10</sup>", "2,442 × 10<sup>-5</sup>", "1 (tetap)"],
+            "question": "Diketahui sebuah sistem planet di sebuah galaksi yang sangat jauh dari Bumi. Sistem planet tersebut terdiri dari sebuah bintang deret utama sebagai bintang induk dan 5 planet. Salah satu planet yang mengorbit bintang deret utama tersebut memiliki sumbu semi mayor sebesar 2,6 SA dan periode orbit selama 2 tahun. Perkirakanlah luminositas dari bintang induk tersebut dalam satuan luminositas Matahari!",
+            "options": ["1,3 L<sub>⊙</sub>", "4,394 L<sub>⊙</sub>", "19,3 L<sub>⊙</sub>", "177,8 L<sub>⊙</sub>", "1 L<sub>⊙</sub>"],
             "answerPosition": 0
         },
         {
