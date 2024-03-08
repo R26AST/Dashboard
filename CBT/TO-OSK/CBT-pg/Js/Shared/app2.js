@@ -88,9 +88,9 @@ var exam = {
             "answerPosition": 3
         },
         {
-            "question": "Suatu ayunan bandul yang berada di Bumi, memiliki periode sebesar 4 detik. Berapakah periode ayunan bandul tersebut jika berada di planet Mars?",
-            "options": ["5,5 detik", "6 detik", "6,5 detik", "7 detik", "7,5 detik"],
-            "answerPosition": 2
+            "question": "Diketahui sebuah teleskop yang memiliki spesifikasi ƒ/4 dengan diameter sebesar 25 cm, Jika pada teleskop tersebut dipasangkan eyepiece dengan fokus 20 mm, berapakah perbesarannya jika mata berakomodasi maksimum? <br>(Titik dekat mata = 25 cm dan titik jauh mata = ∞)",
+            "options": ["4 kali", "40 kali", "44 kali", "50 kali", "54 kali"],
+            "answerPosition": 4
         }
     ]
 }
