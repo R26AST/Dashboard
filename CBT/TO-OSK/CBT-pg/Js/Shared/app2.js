@@ -40,9 +40,9 @@ var exam = {
             "answerPosition":3
         },
         {
-            "question": "Sebuah planet yang bermassa 6 x 10<sup>25</sup> kg mengorbit bintang induknya dengan kecepatan 17 km/s. Jika planet dianggap sebagai benda partikel dan momentum sudut sistem bernilai 2,6 x 10<sup>38</sup> kg m<sup>2</sup>/s, tentukan periode planet tersebut!",
-            "options": ["3,5", "2,5", "1,5", "2", "17,3"],
-            "answerPosition": 1
+            "question": "Sebuah planet yang bermassa 6 x 10<sup>25</sup> kg mengorbit bintang induknya dengan kecepatan 12 km/s. Jika planet dianggap sebagai benda partikel dan momentum sudut sistem bernilai 2,6 x 10<sup>41</sup> kg m<sup>2</sup>/s, tentukan periode planet tersebut!",
+            "options": ["3 tahun", "4 tahun", "5 tahun", "6 tahun", "7 tahun"],
+            "answerPosition": 3
         },
         {
             "question": "Sebuah yang planet mengorbit matahari memiliki periode orbit 10747 hari, dengan jarak rata-rata dari matahari 10 AU. Tentukan kecepatan planet tersebut!",
