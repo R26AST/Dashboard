@@ -60,9 +60,9 @@ var exam = {
             "answerPosition": 4
         },
         {
-            "question": "Terdapat sebuah sistem bintang ganda, di mana kedua bintang tersebut berjarak 0,25 SA. Sistem bintang ganda tersebut berjarak sekitar 7,5 pc dari Bumi. Jika kita memiliki sebuah teleskop dengan diameter 2 meter, berapakah sudut resolusi dari teleskop tersebut dan apakah kedua bintang tersebut dapat dilihat secara terpisah?",
-            "options": ['0,0333" dan tidak terpisah', '0,0333" dan terpisah', '0,0692" dan tidak terpisah', '0,0692" dan terpisah', '0,1260" dan terpisah'],
-            "answerPosition": 2
+            "question": "Pengamatan spektroskopi dilakukan pada sebuah bintang yang berotasi. Diketahui pelebaran garis doppler <i>Fe<sub>1</sub></i> 4071,74 Å bintang tersebut sebesar 3 Å. Berapakah kecepatan rotasi bintang tersebut?",
+            "options": ['100km/s', '110km/s', '200km/s', '220km/s', '440km/s'],
+            "answerPosition": 1
         },
         {
             "question": "Diketahui sebuah sistem planet di sebuah galaksi yang sangat jauh dari Bumi. Sistem planet tersebut terdiri dari sebuah bintang deret utama sebagai bintang induk dan 5 planet. Salah satu planet yang mengorbit bintang deret utama tersebut memiliki sumbu semi mayor sebesar 2,6 SA dan periode orbit selama 2 tahun. Perkirakanlah luminositas dari bintang induk tersebut dalam satuan luminositas Matahari!",
