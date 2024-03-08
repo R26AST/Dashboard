@@ -79,8 +79,8 @@ var exam = {
       <br>(Hint : Use the continuity mass equation! <span style="font-size: 20px;">
       <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mrow><mi>d</mi><mi>M</mi></mrow><mrow><mi>d</mi><mi>r</mi></mrow></mfrac><mo>=</mo><mn>4</mn><mi>&#x3c0;</mi><msup><mi>r</mi><mn>2</mn></msup><mi>&#x3c1;</mi><mo>(</mo><mi>r</mi><mo>)</mo></math></span>
      ) `,
-            "options": ["0,8", "0,9", "1", "1,1", "1,22"],
-            "answerPosition": 3
+            "options": ["1.02 × 10<sup>31</sup> kg", "2.04 × 10<sup>31</sup> kg", "4.08 × 10<sup>31</sup> kg", "1.04 × 10<sup>32</sup> kg", "2.08 × 10<sup>32</sup> kg"],
+            "answerPosition": 1
         },
         {
             "question": "Berapakah <i>FoV</i> sebuah teleskop yang memiliki fokus 80 cm dan <i>eyepiece</i> dengan <i>FoV<sub>eyepiece</sub></i> 80° dan fokus 25 mm?",
