@@ -52,7 +52,7 @@ var exam = {
         },
         {
             "question": 'Reaksi fusi nuklir pada inti bintang hanya terbatas hingga unsur <sub>26</sub>Fe. Hal ini terjadi karena',
-            "options": ["Atom terberat adalah Besi", "Bintang tidak mengandung atom yang lebih berat dari Besi", "Reaksi fusi nuklir yang melibatkan pembuatan unsur lebih berat dari Fe memerlukan energi, bukan menghasilkan energi", "Atom Fe tidak bisa direaksi fusikan kembali", "Temperatur bintang tidak cukup untuk membakar Fe"],
+            "options": ["Atom terberat adalah Besi", "Bintang tidak mengandung atom yang lebih berat dari Besi", "Reaksi fusi nuklir pembuatan unsur lebih berat dari Fe memerlukan energi, bukan menghasilkan energi", "Atom Fe tidak bisa direaksi fusikan kembali", "Temperatur bintang tidak cukup untuk membakar Fe"],
             "answerPosition": 2
         },
         {
