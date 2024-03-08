@@ -37,8 +37,8 @@ var exam = {
      <br>3.Semakin pendek panjang gelombang foton, semakin besar energi foton
      <br>4.Foton tidak memiliki massa
      <br><Bantulah Louis untuk memecahkan teka-teki tersebut dengan menjawab pernyataan yang benar agar dia dapat keluar!`,
-            "options": ["1, 2, dan 3", "1 dan 3", "2 dan 4", "benar semua", "salah semua"],
-            "answerPosition": 1
+            "options": ["1 dan 3", "2 dan 4", "1, 2, dan 3", "benar semua", "salah semua"],
+            "answerPosition": 0
         },
         {
             "question": "Sebuah planet yang bermassa 6 x 10<sup>25</sup> kg mengorbit bintang induknya dengan kecepatan 12 km/s. Jika planet dianggap sebagai benda partikel dan momentum sudut sistem bernilai 2,6 x 10<sup>41</sup> kg m<sup>2</sup>/s, tentukan periode planet tersebut!",
