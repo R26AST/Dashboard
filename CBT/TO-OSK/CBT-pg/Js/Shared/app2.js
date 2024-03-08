@@ -55,9 +55,9 @@ var exam = {
             "answerPosition": 2
         },
         {
-            "question": "Suatu bintang yang berjarak 64pc, bergerak menjauhi Bumi dengan kecepatan radial 37km/s. Apabila kecepatan ruang bintang tersebut adalah 43km/s, berapa besar gerak diri bintang tersebut?",
-            "options": ['0,072"', '0,075"', '0,078"', '0,080"', '0,085"'],
-            "answerPosition": 0
+            "question": "Diketahui sebuah bintang dengan magnitudo semu = m dan magnitudo mutlak = M. Selama perjalanan cahayanya di ruang antar bintang, magnitudo semu bintang tersebut bertambah sebesar 2,6. tentukan perbandingan jarak yang sebenarnya dengan jarak yang mengabaikan absorpsi!",
+            "options": ['1,0', '0,9', '0,7', '0,5', '0,3'],
+            "answerPosition": 4
         },
         {
             "question": "Terdapat sebuah sistem bintang ganda, di mana kedua bintang tersebut berjarak 0,25 SA. Sistem bintang ganda tersebut berjarak sekitar 7,5 pc dari Bumi. Jika kita memiliki sebuah teleskop dengan diameter 2 meter, berapakah sudut resolusi dari teleskop tersebut dan apakah kedua bintang tersebut dapat dilihat secara terpisah?",
