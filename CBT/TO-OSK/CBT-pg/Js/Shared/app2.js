@@ -30,14 +30,15 @@ var exam = {
             "answerPosition": 1
         },
         {
-            "question": `Diberikan beberapa data dan konstanta astronomi sebagai berikut :
-								<br>1) Radius matahari = 6,96 × 10<sup>8</sup> meter
-								<br>2) Temperatur matahari = 5785 K
-								<br>3) Konstanta Stefan-Boltzman = 5,67 × 10<sup>-8</sup> J s<sup>-1</sup> m<sup>-2</sup> K<sup>-4</sup>
-								<br>
-								<br>Tentukan luminositas matahari (energi yang dipancarkan matahari tiap satuan waktu) `,
-            "options": ["5,55 × 10<sup>17</sup> J/s", "1,15 × 10<sup>19</sup> J/s", "1,29 × 10<sup>26</sup> J/s", "3,86 × 10<sup>26</sup> J/s", "9,66 × 10<sup>25</sup> J/s"],
-            "answerPosition":3
+            "question": `Louis sedang berada di ruangan tertutup. Apabila ia ingin keluar dari ruangan tersebut, ia harus memecahkan suatu teka-teki fisika.
+	    <br>Berikut adalah properti-properti yang dimiliki oleh foton
+     <br>1.Foton memiliki momentum
+     <br>2.Foton pasti merupakan gelombang
+     <br>3.Semakin pendek panjang gelombang foton, semakin besar energi foton
+     <br>4.Foton tidak memiliki massa
+     <br><Bantulah Louis untuk memecahkan teka-teki tersebut dengan menjawab pernyataan yang benar agar dia dapat keluar!`,
+            "options": ["1, 2, dan 3", "1 dan 3", "2 dan 4", "benar semua", "salah semua"],
+            "answerPosition": 1
         },
         {
             "question": "Sebuah planet yang bermassa 6 x 10<sup>25</sup> kg mengorbit bintang induknya dengan kecepatan 12 km/s. Jika planet dianggap sebagai benda partikel dan momentum sudut sistem bernilai 2,6 x 10<sup>41</sup> kg m<sup>2</sup>/s, tentukan periode planet tersebut!",
