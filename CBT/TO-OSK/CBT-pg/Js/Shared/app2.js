@@ -61,7 +61,7 @@ var exam = {
             "answerPosition": 4
         },
         {
-            "question": "Pengamatan spektroskopi dilakukan pada sebuah bintang yang berotasi. Diketahui pelebaran garis doppler <i>Fe<sub>1</sub></i> 4071,74 Å bintang tersebut sebesar 3 Å. Berapakah kecepatan rotasi bintang tersebut?",
+            "question": "Pengamatan spektroskopi dilakukan pada sebuah bintang yang berotasi. Diketahui pelebaran garis doppler <i>Fe<sub>1</sub></i> 4071,74Å bintang tersebut sebesar 3Å. Berapakah kecepatan rotasi bintang tersebut?",
             "options": ['100km/s', '110km/s', '200km/s', '220km/s', '440km/s'],
             "answerPosition": 1
         },
