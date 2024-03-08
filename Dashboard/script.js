@@ -99,13 +99,13 @@ let sambutan = document.getElementById("sambutan");
 
 let tahun = new Date().getFullYear();
 let thn_lalu = tahun - 1;
-let tgl = 26; 
+let tgl = 13; 
 
 // Set the date we're counting down to
-var countDownDate = new Date("Jan "+ tgl +", 2024 15:00:00").getTime();
+var countDownDate = new Date("Mar "+ tgl +", 2024 07:00:00").getTime();
 
 // Update the count down every 1 second
-/*var x = setInterval(function() {
+var x = setInterval(function() {
   var now = new Date().getTime();
   
   // Find the distance between now and the count down date
@@ -116,26 +116,26 @@ var countDownDate = new Date("Jan "+ tgl +", 2024 15:00:00").getTime();
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("ket_OSN").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
+  document.getElementById("ket_OSK_2").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
   
   if (distance > 0) {
-  document.getElementById("OSN").innerHTML = "Segera";
-  document.getElementById("OSN").style.cursor = "none";
-  document.getElementById("OSN").style.pointerEvents = "none";
-  document.getElementById("nilai_OSN").innerHTML = "Dibuka pada "+ tgl.toString() +" Januari pukul 15.00";
-  document.getElementById("nilai_OSN").style.fontSize = "small";
-  document.getElementById("ket_OSN").style.fontSize = "x-small";
+  document.getElementById("TO_OSK_2").innerHTML = "Segera";
+  document.getElementById("TO_OSK_2").style.cursor = "none";
+  document.getElementById("TO_OSK_2").style.pointerEvents = "none";
+  document.getElementById("nilai_TO_OSK_2").innerHTML = "Dibuka pada "+ tgl.toString() +" Januari pukul 15.00";
+  document.getElementById("nilai_TO_OSK_2").style.fontSize = "small";
+  document.getElementById("ket_OSK_2").style.fontSize = "x-small";
 }
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("OSN").innerHTML = "Kerjakan";
-    document.getElementById("OSN").classList.replace('pending', 'completed');
-    document.getElementById("OSN").style.cursor = "pointer";
-    document.getElementById("ket_OSN").innerHTML = "";
+    document.getElementById("TO_OSK_2").innerHTML = "Kerjakan";
+    document.getElementById("TO_OSK_2").classList.replace('pending', 'completed');
+    document.getElementById("TO_OSK_2").style.cursor = "pointer";
+    document.getElementById("ket_OSK_2").style.display = "none";
 }
-}, 1000);*/
+}, 1000);
 
 function home() {
   Judul.innerHTML = "Dashboard";
