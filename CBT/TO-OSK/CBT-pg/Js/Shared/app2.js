@@ -14,6 +14,15 @@ var exam = {
             "options":["50pc", "50kpc", "50Mpc", "50Gpc", "500Gpc"],
             "answerPosition": 4
         },
+	{
+            "question": `Big Bang adalah peristiwa yang menyebabkan pembentukan alam semesta. Pernyataan berikut yang benar mengenai Teori Big Bang adalah ....
+	    <br>(1) Big Bang adalah ledakan simultan di semua ruang tak hingga
+            <br>(2) Big Bang adalah ledakan lokal alam semesta
+	    <br>(3) Pada mulanya, alam semesta sangat padat dan panas
+            <br>(4) Pada mulanya, alam semesta sangat renggang dan dingin`,
+            "options": ["1 dan 3", "2 dan 4", "1, 2, dan 3", "benar semua", "salah semua"],
+            "answerPosition": 0
+        },
         {
             "question": "Consider the binary system Kepler-16, which has the primary star Kepler-16A and the secondary star Kepler-16B. It has an orbital period P = 41.08 days and the measured parallax is p =13.29 mas. Calculate the total mass of the stars, using the fact that their maximum angular separation measured from Earth is θ = 2.98 mas and they are on an edge-on orbit.",
             "options": ["0.56 M<sub>⊙</sub>", "0.74 M<sub>⊙</sub>", "0.89 M<sub>⊙</sub>", "1.03 M<sub>⊙</sub>", "1.17 M<sub>⊙</sub>"],
@@ -95,7 +104,7 @@ var exam = {
     ]
 }
 
-let kunci = [3, 4, 3, 2, 1, 0, 3, 2, 2, 4, 1, 3, 1, 3, 4];
+let kunci = [3, 4, 0, 3, 2, 1, 0, 3, 2, 2, 4, 1, 3, 1, 3, 4];
 
 var sec = 0, detik, x, hps;
 var timerObject;
@@ -154,7 +163,7 @@ function sebelum() {
 }
 function setelah() {
     x++;
-    if(x > 14) {x = 14;}
+    if(x > (exam.questions.length - 1)) {x = (exam.questions.length - 1);}
     else {x = x;}
     showQuestion(x);
 	window.scroll({ top: 470, left: 0, behavior: 'smooth'});
