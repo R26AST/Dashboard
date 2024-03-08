@@ -50,9 +50,9 @@ var exam = {
             "answerPosition": 2
         },
         {
-            "question": 'Suatu komet yang mengorbit matahari, memiliki periode orbit selama 16 tahun dan eksentrisitas sebesar 0,7. Berapakah jarak terdekat dari orbit komet tersebut?',
-            "options": ["1,9 sa", "4,44 sa", "4,8 sa", "6,35 sa", "11,2 sa"],
-            "answerPosition": 1
+            "question": 'Reaksi fusi nuklir pada inti bintang hanya terbatas hingga unsur <sub>26</sub>Fe. Hal ini terjadi karena',
+            "options": ["Atom terberat adalah Besi", "Bintang tidak mengandung atom yang lebih berat dari Besi", "Reaksi fusi nuklir yang melibatkan pembuatan unsur lebih berat dari Fe memerlukan energi, bukan menghasilkan energi", "Atom Fe tidak bisa direaksi fusikan kembali", "Temperatur bintang tidak cukup untuk membakar Fe"],
+            "answerPosition": 2
         },
         {
             "question": "Suatu bintang yang berjarak 64pc, bergerak menjauhi Bumi dengan kecepatan radial 37km/s. Apabila kecepatan ruang bintang tersebut adalah 43km/s, berapa besar gerak diri bintang tersebut?",
