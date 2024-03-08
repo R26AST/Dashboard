@@ -16,10 +16,10 @@ var exam = {
         },
 	{
             "question": `Big Bang adalah peristiwa yang menyebabkan pembentukan alam semesta. Pernyataan berikut yang benar mengenai Teori Big Bang adalah ....
-	    <br>(1) Big Bang adalah ledakan simultan di semua ruang tak hingga
-            <br>(2) Big Bang adalah ledakan lokal alam semesta
-	    <br>(3) Pada mulanya, alam semesta sangat padat dan panas
-            <br>(4) Pada mulanya, alam semesta sangat renggang dan dingin`,
+	    <br>(1)Big Bang adalah ledakan simultan di semua ruang tak hingga
+            <br>(2)Big Bang adalah ledakan lokal alam semesta
+	    <br>(3)Pada mulanya, alam semesta sangat padat dan panas
+            <br>(4)Pada mulanya, alam semesta sangat renggang dan dingin`,
             "options": ["1 dan 3", "2 dan 4", "1, 2, dan 3", "benar semua", "salah semua"],
             "answerPosition": 0
         },
