@@ -122,7 +122,7 @@ var x = setInterval(function() {
   document.getElementById("TO_OSK_2").innerHTML = "Segera";
   document.getElementById("TO_OSK_2").style.cursor = "none";
   document.getElementById("TO_OSK_2").style.pointerEvents = "none";
-  document.getElementById("nilai_TO_OSK_2").innerHTML = "Dibuka pada "+ tgl.toString() +" Januari pukul 15.00";
+  document.getElementById("nilai_TO_OSK_2").innerHTML = "Dibuka pada "+ tgl.toString() +" Maret pukul 07.00";
   document.getElementById("nilai_TO_OSK_2").style.fontSize = "small";
   document.getElementById("ket_OSK_2").style.fontSize = "x-small";
 }
