@@ -83,9 +83,9 @@ var exam = {
             "answerPosition": 3
         },
         {
-            "question": "Suatu asteroid menghantam permukaan Bumi, apabila asteroid tersebut memiliki massa sekitar 1 kwintal, radius 26 meter, dan kecepatan 57 m/s. Berapakah energi kinetik dari asteroid tersebut?",
-            "options": ["285000 J", "3249000 J", "1624500 J", "324900 J", "162450 J"],
-            "answerPosition": 4
+            "question": "Berapakah <i>FoV</i> sebuah teleskop yang memiliki fokus 80 cm dan <i>eyepiece</i> dengan <i>FoV<sub>eyepiece</sub></i> 80° dan fokus 25 mm?",
+            "options": ["1°15'", "1°30'", "2°15'", "2°30'", "3°15'"],
+            "answerPosition": 3
         },
         {
             "question": "Suatu ayunan bandul yang berada di Bumi, memiliki periode sebesar 4 detik. Berapakah periode ayunan bandul tersebut jika berada di planet Mars?",
