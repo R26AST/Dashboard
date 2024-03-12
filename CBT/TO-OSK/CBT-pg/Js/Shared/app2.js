@@ -100,11 +100,31 @@ var exam = {
             "question": "Diketahui sebuah teleskop yang memiliki spesifikasi ƒ/4 dengan diameter sebesar 25 cm, Jika pada teleskop tersebut dipasangkan eyepiece dengan fokus 20 mm, berapakah perbesarannya jika mata berakomodasi maksimum? <br>(Titik dekat mata = 25 cm dan titik jauh mata = ∞)",
             "options": ["4 kali", "40 kali", "44 kali", "50 kali", "54 kali"],
             "answerPosition": 4
-        }
+        },
+	{
+            "question": "Alasan mengapa Matahari kita tidak akan berevolusi menjadi lubang hitam adalah...",
+            "options": ["Temperatur Matahari tidak cukup panas untuk memulai pembakaran karbon.", "Matahari akan kehabisan bahan bakar sebelum dapat melakukan reaksi fusi unsur berat.", "Massa Matahari tidak mencukupi untuk menghasilkan energi <i>triple-alpha</i>.", "Matahari akan meledak dalam supernova dan menjadi katai putih.", "Saat ukuran Matahari membesar, kerapatan semakin kecil dan gravitasi tidak kuat menarik materi bintang di permukaan untuk runtuh."],
+            "answerPosition": 0
+        },
+	{
+            "question": "Matahari tersusun atas beberapa lapisan. Lapisan matahari yang menjadi pelindung dari sinar kosmik yang berada di luar Tata Surya adalah…",
+            "options": ["Fotosfer", "Kromosfer", "Heliosfer", "Zona konveksi", "Zona radiatif"],
+            "answerPosition": 2
+        },
+	{
+            "question": `Berikut yang merupakan beberapa orang tokoh-tokoh:
+		 <p style="text-align:left"><br> 1. Teori Lyttleton
+                 <br> 2. Teori Bigbang
+		 <br> 3. Teori Kant-Laplace
+                 <br> 4. Teori Hubble</p>
+             <br>Yang merupakan teori pembentukan tata surya adalah…`,
+            "options": ["1 dan 3", "2 dan 4", "1, 2, dan 3", "benar semua", "salah semua"],
+            "answerPosition": 0
+        },
     ]
 }
 
-let kunci = [3, 4, 0, 3, 2, 1, 0, 3, 2, 2, 4, 1, 3, 1, 3, 4];
+let kunci = [3, 4, 0, 3, 2, 1, 0, 3, 2, 2, 4, 1, 3, 1, 3, 4, 0, 2, 0];
 
 var sec = 0, detik, x, hps;
 var timerObject;
