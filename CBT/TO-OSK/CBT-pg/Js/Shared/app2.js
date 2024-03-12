@@ -446,7 +446,7 @@ function submitExam(){
 		}			
     }
     
-    localStorage.setItem("TO_OSK", score);
+    localStorage.setItem("TO_OSK_2", score);
 
     //score = score/0.4;
     /*let nilai = score.toString();
