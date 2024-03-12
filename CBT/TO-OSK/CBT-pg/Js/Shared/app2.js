@@ -16,10 +16,10 @@ var exam = {
         },
 	{
             "question": `Big Bang adalah peristiwa yang menyebabkan pembentukan alam semesta. Pernyataan berikut yang benar mengenai Teori Big Bang adalah ....
-	    <br>(1)Big Bang adalah ledakan simultan di semua ruang tak hingga
+	    <p style="text-align:left"><br>(1)Big Bang adalah ledakan simultan di semua ruang tak hingga
             <br>(2)Big Bang adalah ledakan lokal alam semesta
 	    <br>(3)Pada mulanya, alam semesta sangat padat dan panas
-            <br>(4)Pada mulanya, alam semesta sangat renggang dan dingin`,
+            <br>(4)Pada mulanya, alam semesta sangat renggang dan dingin</p>`,
             "options": ["1 dan 3", "2 dan 4", "1, 2, dan 3", "benar semua", "salah semua"],
             "answerPosition": 0
         },
@@ -41,11 +41,11 @@ var exam = {
         {
             "question": `Louis sedang berada di ruangan tertutup. Apabila ia ingin keluar dari ruangan tersebut, ia harus memecahkan suatu teka-teki fisika.
 	    <br>Berikut adalah properti-properti yang dimiliki oleh foton
-     <br>1.Foton memiliki momentum
-     <br>2.Foton pasti merupakan gelombang
-     <br>3.Semakin pendek panjang gelombang foton, semakin besar energi foton
-     <br>4.Foton tidak memiliki massa
-     <br><Bantulah Louis untuk memecahkan teka-teki tersebut dengan menjawab pernyataan yang benar agar dia dapat keluar!`,
+            <p style="text-align:left"><br>1.Foton memiliki momentum
+            <br>2.Foton pasti merupakan gelombang
+            <br>3.Semakin pendek panjang gelombang foton, semakin besar energi foton
+            <br>4.Foton tidak memiliki massa</p>
+            <br><Bantulah Louis untuk memecahkan teka-teki tersebut dengan menjawab pernyataan yang benar agar dia dapat keluar!`,
             "options": ["1 dan 3", "2 dan 4", "1, 2, dan 3", "benar semua", "salah semua"],
             "answerPosition": 0
         },
