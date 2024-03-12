@@ -121,10 +121,15 @@ var exam = {
             "options": ["1 dan 3", "2 dan 4", "1, 2, dan 3", "benar semua", "salah semua"],
             "answerPosition": 0
         },
+	{
+            "question": "Paradoks Olbers menyatakan anehnya langit malam gelap padahal bintang tersebar di segala arah di langit. Penjelasan yang paling bisa diterima untuk paradoks ini adalah ….",
+            "options": ["Pandangan ke bintang-bintang dihalangi oleh materi antar bintang yang menyerap cahaya bintang.", "Makin jauh dari kita, bintang-bintang memiliki luminositas makin kecil.", "Usia alam semesta berhingga.", "Cara kita menghitung fluks menggunakan hukum kuadrat kebalikan salah.", "Alam semesta jauh menyimpang dari geometri Euclidian (datar)."],
+            "answerPosition": 2
+	}
     ]
 }
 
-let kunci = [3, 4, 0, 3, 2, 1, 0, 3, 2, 2, 4, 1, 3, 1, 3, 4, 0, 2, 0];
+let kunci = [3, 4, 0, 3, 2, 1, 0, 3, 2, 2, 4, 1, 3, 1, 3, 4, 0, 2, 0, 2];
 
 var sec = 0, detik, x, hps;
 var timerObject;
