@@ -100,9 +100,10 @@ let sambutan = document.getElementById("sambutan");
 let tahun = new Date().getFullYear();
 let thn_lalu = tahun - 1;
 let tgl = 13; 
+let jam = 8;
 
 // Set the date we're counting down to
-var countDownDate = new Date("Mar "+ tgl +", 2024 08:00:00").getTime();
+var countDownDate = new Date("Mar "+ tgl +", 2024 0"+ jam +":00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -122,7 +123,7 @@ var x = setInterval(function() {
   document.getElementById("TO_OSK_2").innerHTML = "Segera";
   document.getElementById("TO_OSK_2").style.cursor = "none";
   document.getElementById("TO_OSK_2").style.pointerEvents = "none";
-  document.getElementById("nilai_TO_OSK_2").innerHTML = "Dibuka pada "+ tgl.toString() +" Maret pukul 07.00";
+  document.getElementById("nilai_TO_OSK_2").innerHTML = "Dibuka pada "+ tgl.toString() +" Maret pukul 0"+ jam +".00";
   document.getElementById("nilai_TO_OSK_2").style.fontSize = "small";
   document.getElementById("ket_OSK_2").style.fontSize = "x-small";
 }
