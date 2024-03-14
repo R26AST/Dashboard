@@ -202,7 +202,7 @@ body {
 }
 #content nav::before {
 	content: '';
-	position: absolute;
+	position: fixed; /*absolute*/
 	width: 40px;
 	height: 40px;
 	bottom: -40px;
