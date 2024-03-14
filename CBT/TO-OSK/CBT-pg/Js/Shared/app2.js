@@ -30,7 +30,7 @@ var exam = {
         },
         {
             "question": 'Dua buah bintang terpisah sebesar 2,6 derajat di langit. Kedua bintang tersebut masing-masing memiliki paralaks 0,07" dan 0,32". Berapakah jarak antara kedua bintang tersebut?',
-            "options": ["35", "175", "11,6pc", "10025", "60025"],
+            "options": ["3,7pc", "7,5pc", "11,6pc", "15,83pc", "62,5pc"],
             "answerPosition": 2
         },
         {
