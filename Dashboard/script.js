@@ -117,13 +117,14 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("nilai_OSN_essay").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
+  //document.getElementById("nilai_OSN_essay").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
   
   if (distance > 0) {
   document.getElementById("OSN_essay").innerHTML = "Segera";
   document.getElementById("OSN_essay").style.cursor = "none";
   document.getElementById("OSN_essay").style.pointerEvents = "none";
   document.getElementById("ket_OSN_essay").innerHTML = "Dibuka pada "+ tgl.toString() +" Maret pukul 0"+ jam +".00";
+	  document.getElementById("ket_OSN_essay").innerHTML += "<br>"days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
   document.getElementById("ket_OSN_essay").style.fontSize = "small";
   document.getElementById("ket_OSN_essay").style.fontSize = "x-small";
 }
