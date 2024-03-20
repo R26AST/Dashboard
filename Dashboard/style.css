@@ -195,7 +195,7 @@ body {
 	align-items: center;
 	grid-gap: 24px;
 	font-family: var(--lato);
-	position: absolute; /*sticky*/
+	position: sticky; /*sticky*/
 	top: 0;
 	left: 0;
 	z-index: 1000;
