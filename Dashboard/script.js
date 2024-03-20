@@ -99,7 +99,7 @@ let sambutan = document.getElementById("sambutan");
 
 let tahun = new Date().getFullYear();
 let thn_lalu = tahun - 1;
-let tgl = 13; 
+let tgl = 21; 
 let jam = 8;
 
 // Set the date we're counting down to
@@ -117,24 +117,24 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("ket_OSK_2").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
+  document.getElementById("OSN_essay").innerHTML = days + "<sup>h</sup> : " + hours + "<sup>j</sup> : " + minutes + "<sup>m</sup> : " + seconds+ "<sup>d</sup>";
   
   if (distance > 0) {
-  document.getElementById("TO_OSK_2").innerHTML = "Segera";
-  document.getElementById("TO_OSK_2").style.cursor = "none";
-  document.getElementById("TO_OSK_2").style.pointerEvents = "none";
-  document.getElementById("nilai_TO_OSK_2").innerHTML = "Dibuka pada "+ tgl.toString() +" Maret pukul 0"+ jam +".00";
-  document.getElementById("nilai_TO_OSK_2").style.fontSize = "small";
-  document.getElementById("ket_OSK_2").style.fontSize = "x-small";
+  document.getElementById("OSN_essay").innerHTML = "Segera";
+  document.getElementById("OSN_essay").style.cursor = "none";
+  document.getElementById("OSN_essay").style.pointerEvents = "none";
+  document.getElementById("ket_OSN_essay").innerHTML = "Dibuka pada "+ tgl.toString() +" Maret pukul 0"+ jam +".00";
+  document.getElementById("ket_OSN_essay").style.fontSize = "small";
+  document.getElementById("ket_OSN_essay").style.fontSize = "x-small";
 }
     
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("TO_OSK_2").innerHTML = "Kerjakan";
-    document.getElementById("TO_OSK_2").classList.replace('pending', 'completed');
-    document.getElementById("TO_OSK_2").style.cursor = "pointer";
-    document.getElementById("ket_OSK_2").style.display = "none";
+    document.getElementById("OSN_essay").innerHTML = "Kerjakan";
+    document.getElementById("OSN_essay").classList.replace('pending', 'completed');
+    document.getElementById("OSN_essay").style.cursor = "pointer";
+    document.getElementById("ket_OSN_essay").style.display = "none";
 }
 }, 1000);
 
