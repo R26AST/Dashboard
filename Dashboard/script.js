@@ -124,7 +124,7 @@ var x = setInterval(function() {
   document.getElementById("OSN_essay").style.cursor = "none";
   document.getElementById("OSN_essay").style.pointerEvents = "none";
   document.getElementById("nilai_OSN_essay").innerHTML = "Dibuka pada "+ tgl.toString() +" Maret pukul 0"+ jam +".00";
-  document.getElementById("ket_OSN_essay").style.fontSize = "small";
+  document.getElementById("ket_OSN_essay").style.fontSize = "x-small";
   document.getElementById("nilai_OSN_essay").style.fontSize = "x-small";
 }
     
