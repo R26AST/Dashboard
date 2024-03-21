@@ -134,6 +134,7 @@ var x = setInterval(function() {
     document.getElementById("OSN_essay").innerHTML = "Kerjakan";
     document.getElementById("OSN_essay").classList.replace('pending', 'completed');
     document.getElementById("OSN_essay").style.cursor = "pointer";
+  document.getElementById("OSN_essay").style.pointerEvents = "auto";
     document.getElementById("ket_OSN_essay").style.display = "none";
     document.getElementById("nilai_OSN_essay").style.display = "none";
 }
